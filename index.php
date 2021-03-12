@@ -9,8 +9,8 @@
   </body>
 </html>
 <?php
-// $data = $_POST["temp"];
-// echo $data;
+$data = $_POST["temp"];
+ echo $data;
 
-echo ('YES');
+echo ('OK');
  ?>
