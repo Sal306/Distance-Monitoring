@@ -12,7 +12,7 @@
 
 $db = new PDO($dsn);
     if($db){
-      http_response_code(501);
+      http_response_code(200);
     }
     else {
       echo "Error";
