@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
 
     <?php
 
@@ -19,7 +12,7 @@
 
 $db = new PDO($dsn);
     if($db){
-      echo "Connected ";
+      var_dump(http_response_code(501));
     }
     else {
       echo "Error";
@@ -27,12 +20,5 @@ $db = new PDO($dsn);
 
     // $res = pg_insert($conn, 'capstone', $_POST, PG_DML_ESCAPE);
     //
-    //   if ($res) {
-    //       echo "POST data is successfully logged\n";
-    //   } else {
-    //       echo "User must have sent wrong inputs\n";
-    //   }
-     ?>
 
-  </body>
-</html>
+     ?>
