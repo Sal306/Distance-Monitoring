@@ -24,8 +24,6 @@ $db = new PDO($dsn);
 
       $db->exec($sqlList);
 
-      $sql = 'INSERT INTO stocks(symbol,company) VALUES(:symbol,:company)';
-        $stmt = $this->pdo->prepare($sql);
 
       }
 
