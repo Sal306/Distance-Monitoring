@@ -17,9 +17,9 @@ $db = new PDO($dsn);
           id int PRIMARY KEY,
           distance real not null,
           temp real not null,
-          location, text not null,
-          data, timestamp ,
-          fav, boolean default False
+          location text not null,
+          data timestamp ,
+          fav boolean default False
           );';
 
       $db->exec($sqlList);
