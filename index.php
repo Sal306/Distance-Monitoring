@@ -47,7 +47,7 @@
 						</span>
 						<h3 class="serv__name">Location</h3>
 					</div>
-					<!-- <div class="serv__ip">
+					<div class="serv__ip">
 							<span>
 								  	<div class="star_container">
 													 <img src="img/star_empty.png" class="imgempty disable" />
@@ -55,7 +55,7 @@
 									  </div>
 							</span>
 							Date
-						</div> -->
+						</div>
 				</header>
 				<article class="serv__gpu">
 					<div class="serv__grid-3">
