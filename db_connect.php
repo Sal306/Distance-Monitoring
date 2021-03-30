@@ -16,9 +16,8 @@ $db = new PDO($dsn);
       $sqlList = 'CREATE TABLE IF NOT EXISTS aa (
           id int PRIMARY KEY,
           distance real not null,
-          temp real not null,
-          location, varchar not null,
-          data, timestamp 
+          temp real not null
+
 
           );';
 
