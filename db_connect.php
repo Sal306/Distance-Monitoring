@@ -20,9 +20,9 @@ $db = new PDO($dsn);
           distance real not null,
           temp real not null,
           location varchar not null,
-          data timestamp ,
-          fav boolean default 0
-          )";
+          data timestamp not null ,
+          fav boolean not null
+        );";
 
           $db->exec($sqlList)
           http_response_code(200);
