@@ -37,7 +37,7 @@ $db = new PDO($dsn);
         //   $db->exec($sqlList)
         //   http_response_code(200);
 
-    }
+
     else {
       echo "Error";
     }
