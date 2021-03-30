@@ -50,8 +50,8 @@
 					<div class="serv__ip">
 							<span>
 								  	<div class="star_container">
-													 <img src="img/star_full.png" class="imgfull" />
-													 <img src="img/star_empty.png" class="imgempty disable" />
+													 <img src="img/star_full.png" class="imgfull disable" />
+													 <img src="img/star_empty.png" class="imgempty " />
 									  </div>
 							</span>
 							Date
@@ -103,8 +103,8 @@
 					<div class="serv__ip">
 						<span>
 							<div class="star_container">
-									<img src="img/star_full.png" class="imgfull" />								
-									 <img src="img/star_empty.png" class="imgempty disable" />
+									<img src="img/star_full.png" class="imgfull disable" />
+									 <img src="img/star_empty.png" class="imgempty " />
  							</div>
 						</span>
 						Date
