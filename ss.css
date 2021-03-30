@@ -316,8 +316,8 @@ table {
 }
 .star_container {
   display: inline-block;
-	width: 25px;
-	height: 25px;
+	width: 5px;
+	height: 5px;
 }
 .disable {
   display: none;
