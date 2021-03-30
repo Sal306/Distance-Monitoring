@@ -13,16 +13,19 @@
 $db = new PDO($dsn);
     if($db){
 
-      $sqlList = 'CREATE TABLE IF NOT EXISTS data (
-          id int PRIMARY KEY,
+      $sqlList = 'CREATE TABLE IF NOT EXISTS report (
+          id serial PRIMARY KEY,
           distance real not null,
           temp real not null,
           location text not null,
-          data timestamp ,
+          date timestamp ,
           fav boolean default False
           );';
 
       $db->exec($sqlList);
+
+      $sql = 'INSERT INTO stocks(symbol,company) VALUES(:symbol,:company)';
+        $stmt = $this->pdo->prepare($sql);
 
       }
 
