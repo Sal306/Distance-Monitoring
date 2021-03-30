@@ -13,7 +13,8 @@
 $db = new PDO($dsn);
     if($db){
       try{
-        echo "succes";
+        echo "success";
+        exit();
         // $sqlList = "CREATE TABLE IF NOT EXISTS data (
         //   id serial PRIMARY KEY,
         //   distance real not null,
