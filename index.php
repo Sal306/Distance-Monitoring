@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>GPU Info</title>
+	<title>Social Protocol Info</title>
 	<link rel="stylesheet" type="text/css" href="ss.css">
 	<link rel="stylesheet" type="text/css" href="https://github.com/TixieBorg/Ethereum-panel/blob/6797e8e7aef50453b1e1236414c31300f7abf37f/css/design.css">
 </head>
@@ -50,6 +50,36 @@
 					<div class="serv__ip">12/3/2021</div>
 				</header>
 				<article class="serv__gpu">
+					<div class="serv__grid-3">
+						<div class="serv__mod">
+							<div class="serv__modLabel serv__modLabel--red">
+								Distance
+							</div>
+							<div class="serv__modNumber">
+								1.2<label class="serv__modUnit">M</label>
+							</div>
+						</div>
+
+						<div class="serv__mod">
+							<div class="serv__modLabel serv__modLabel--green">
+								Temp
+							</div>
+							<div class="serv__modNumber">
+								20<label class="serv__modUnit">&deg;C</label>
+							</div>
+						</div>
+
+						<div class="serv__mod">
+							<div class="serv__modLabel serv__modLabel--yellow">
+								Time
+							</div>
+							<div class="serv__modNumber">
+								15:30<label class="serv__modUnit"></label>
+							</div>
+						</div>
+
+
+					</div>
 					<div class="serv__grid-3">
 						<div class="serv__mod">
 							<div class="serv__modLabel serv__modLabel--red">
