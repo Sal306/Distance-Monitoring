@@ -13,19 +13,21 @@
 $db = new PDO($dsn);
     if($db){
       // try{
-        echo "success";
-
-        $sqlList = "CREATE TABLE IF NOT EXISTS data (
-          id serial PRIMARY KEY,
-          distance real not null,
-          temp real not null,
-          location varchar not null,
-          data timestamp not null ,
-          fav boolean not null
-        );";
-
-          $db->exec($sqlList)
-          http_response_code(200);
+try{
+  $sqlList = "CREATE TABLE IF NOT EXISTS data (
+    id serial PRIMARY KEY,
+    distance real not null,
+    temp real not null,
+    location varchar not null,
+    data timestamp not null ,
+    fav boolean not null
+  );";
+  $db->exec($sqlList)
+  http_response_code(200);
+}
+catch(PDOException $e) {
+    echo $e->getMessage();
+}
       }
 
 
@@ -41,7 +43,7 @@ $db = new PDO($dsn);
         //   $db->exec($sqlList)
         //   http_response_code(200);
 
-
+    }
     else {
       echo "Error";
     }
