@@ -14,9 +14,7 @@ $db = new PDO($dsn);
     if($db){
       // try{
 try{
-  $sqlList = "CREATE TABLE IF NOT EXISTS test (
-    id serial PRIMARY KEY
-  );";
+  $sqlList = "CREATE TABLE IF NOT EXISTS test (  id serial PRIMARY KEY);";
   $db->exec($sqlList)
   http_response_code(200);
 }
