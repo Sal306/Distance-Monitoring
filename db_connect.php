@@ -14,10 +14,11 @@ $db = new PDO($dsn);
     if($db){
       // try{
 
-      $sqlList = "CREATE TABLE IF NOT EXISTS sampleTable (
-      id serial PRIMARY KEY,
-      sampleField character varying(20) NOT NULL UNIQUE
-      )";
+      $sqlList = 'CREATE TABLE IF NOT EXISTS stocks (
+                        id serial PRIMARY KEY,
+                        symbol character varying(10) NOT NULL UNIQUE,
+                        company character varying(255) NOT NULL UNIQUE
+                     );';
 
       $db->exec($sqlList);
 
