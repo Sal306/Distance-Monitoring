@@ -14,7 +14,7 @@ $db = new PDO($dsn);
     if($db){
       try{
         $sqlList = "CREATE TABLE IF NOT EXISTS data (
-          id int PRIMARY KEY,
+          id serial PRIMARY KEY,
           distance real not null,
           temp real not null,
           location, varchar not null,
