@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Social Protocol Info</title>
+	<title>GPU Info</title>
 	<link rel="stylesheet" type="text/css" href="ss.css">
 	<link rel="stylesheet" type="text/css" href="https://github.com/TixieBorg/Ethereum-panel/blob/6797e8e7aef50453b1e1236414c31300f7abf37f/css/design.css">
 </head>
@@ -45,9 +45,17 @@
 						<span class="serv__status serv__status--up">
 							&#9679;
 						</span>
-						<h3 class="serv__name">Distance Protocol</h3>
+						<h3 class="serv__name">Location</h3>
 					</div>
-					<div class="serv__ip">12/3/2021</div>
+					<div class="serv__ip">
+							<span>
+								  	<div class="star_container">
+													 <img src="star_empty.png" class="imgempty disable" />
+													 <img src="star_full.png" class="imgfull" />
+									  </div>
+							</span>
+							Date
+				</div>
 				</header>
 				<article class="serv__gpu">
 					<div class="serv__grid-3">
@@ -56,7 +64,7 @@
 								Distance
 							</div>
 							<div class="serv__modNumber">
-								1.2<label class="serv__modUnit">M</label>
+								DistValue<label class="serv__modUnit">M</label>
 							</div>
 						</div>
 
@@ -65,7 +73,7 @@
 								Temp
 							</div>
 							<div class="serv__modNumber">
-								20<label class="serv__modUnit">&deg;C</label>
+								TempValue<label class="serv__modUnit">&deg;C</label>
 							</div>
 						</div>
 
@@ -74,19 +82,42 @@
 								Time
 							</div>
 							<div class="serv__modNumber">
-								15:30<label class="serv__modUnit"></label>
+								TimeValue<label class="serv__modUnit"></label>
 							</div>
 						</div>
 
 
 					</div>
+				</article>
+
+
+			</section>
+			<section class="serv">
+				<header class="serv__head">
+					<div>
+						<span class="serv__status serv__status--up">
+							&#9679;
+						</span>
+						<h3 class="serv__name">Location</h3>
+					</div>
+					<div class="serv__ip">
+						<span>
+							<div class="star_container">
+									 <img src="star_empty.png" class="imgempty disable" />
+									 <img src="star_full.png" class="imgfull" />
+ 							</div>
+						</span>
+						Date
+					</div>
+				</header>
+				<article class="serv__gpu">
 					<div class="serv__grid-3">
 						<div class="serv__mod">
 							<div class="serv__modLabel serv__modLabel--red">
 								Distance
 							</div>
 							<div class="serv__modNumber">
-								1.2<label class="serv__modUnit">M</label>
+								DistValue<label class="serv__modUnit">M</label>
 							</div>
 						</div>
 
@@ -95,7 +126,7 @@
 								Temp
 							</div>
 							<div class="serv__modNumber">
-								20<label class="serv__modUnit">&deg;C</label>
+								TempValue<label class="serv__modUnit">&deg;C</label>
 							</div>
 						</div>
 
@@ -104,7 +135,7 @@
 								Time
 							</div>
 							<div class="serv__modNumber">
-								15:30<label class="serv__modUnit"></label>
+								TimeValue<label class="serv__modUnit"></label>
 							</div>
 						</div>
 
