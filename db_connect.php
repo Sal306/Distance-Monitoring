@@ -13,13 +13,13 @@
 $db = new PDO($dsn);
     if($db){
 
-      $sqlList = 'CREATE TABLE IF NOT EXISTS report (
+      $sqlList = 'CREATE TABLE IF NOT EXISTS aa (
           id int PRIMARY KEY,
           distance real not null,
           temp real not null,
           location, varchar not null,
-          data, timestamp ,
-          fav, boolean default 0
+          data, timestamp 
+
           );';
 
       $db->exec($sqlList);
