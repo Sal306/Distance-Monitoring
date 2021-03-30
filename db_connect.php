@@ -13,14 +13,14 @@
 $db = new PDO($dsn);
     if($db){
       // try{
-try{
-  $sqlList = "CREATE TABLE IF NOT EXISTS test (  id serial PRIMARY KEY)";
-  $db->exec($sqlList)
-  http_response_code(200);
-}
-catch(PDOException $e) {
-    echo $e->getMessage();
-}
+
+      $sqlList = "CREATE TABLE IF NOT EXISTS sampleTable (
+      id serial PRIMARY KEY,
+      sampleField character varying(20) NOT NULL UNIQUE
+      )";
+
+      $db->exec($sqlList);
+
       }
 
 
