@@ -13,22 +13,33 @@
 $db = new PDO($dsn);
     if($db){
 
-      $sqlList = 'CREATE TABLE IF NOT EXISTS stocks (
-                        id serial PRIMARY KEY,
-                        symbol character varying(10) NOT NULL UNIQUE,
-                        company character varying(255) NOT NULL UNIQUE
-                     );';
+      $sqlList = '  CREATE TABLE IF NOT EXISTS data (
+          id int PRIMARY KEY,
+          distance real not null,
+          temp real not null,
+          location, varchar not null,
+          data, timestamp ,
+          fav, boolean default 0
+          );';
 
-      $db->exec($sqlList); 
+      $db->exec($sqlList);
 
       }
 
 
 
 
+        // $sqlList = "";
+        //
+        //   $db->exec($sqlList)
+        //   http_response_code(200);
+
+
     else {
       echo "Error";
     }
 
+    // $res = pg_insert($conn, 'capstone', $_POST, PG_DML_ESCAPE);
+    //
 
      ?>
