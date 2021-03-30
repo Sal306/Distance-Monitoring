@@ -19,7 +19,7 @@ $db = new PDO($dsn);
                         company character varying(255) NOT NULL UNIQUE
                      );';
 
-      $db->exec($sqlList); or die(print_r($db->errorInfo(), true));
+      $db->exec($sqlList); 
 
       }
 
@@ -30,5 +30,5 @@ $db = new PDO($dsn);
       echo "Error";
     }
 
-    
+
      ?>
