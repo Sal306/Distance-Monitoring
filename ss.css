@@ -316,9 +316,12 @@ table {
 }
 .star_container {
   display: inline-block;
-	width: 5px;
-	height: 5px;
+
 }
 .disable {
   display: none;
+}
+img{
+	width: 5px;
+	height: 5px;
 }
