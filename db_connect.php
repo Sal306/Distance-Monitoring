@@ -19,17 +19,15 @@ $db = new PDO($dsn);
           id serial PRIMARY KEY,
           distance real not null,
           temp real not null,
-          location, varchar not null,
-          data, timestamp ,
-          fav, boolean default 0
+          location varchar not null,
+          data timestamp ,
+          fav boolean default 0
           )";
-        //
-        //   $db->exec($sqlList)
-        //   http_response_code(200);
-      // }
-        // catch(PDOException $e) {
-        //     echo $e->getMessage();
-        // }
+
+          $db->exec($sqlList)
+          http_response_code(200);
+      }
+
 
         // $sqlList = "CREATE TABLE IF NOT EXISTS data (
         //   id int PRIMARY KEY,
@@ -43,7 +41,7 @@ $db = new PDO($dsn);
         //   $db->exec($sqlList)
         //   http_response_code(200);
 
-    }
+
     else {
       echo "Error";
     }
