@@ -5,8 +5,6 @@ let fullStar = document.querySelector(".imgfull");
 // get images' container
 let starContainer = document.querySelector(".star_container");
 
-
-
 // while clicking, swap the disable class
 starContainer.addEventListener("click", function () {
   console.log(fullStar);
