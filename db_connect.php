@@ -14,13 +14,8 @@ $db = new PDO($dsn);
     if($db){
       // try{
 try{
-  $sqlList = "CREATE TABLE IF NOT EXISTS data (
-    id serial PRIMARY KEY,
-    distance real not null,
-    temp real not null,
-    location varchar not null,
-    data timestamp not null ,
-    fav boolean not null
+  $sqlList = "CREATE TABLE IF NOT EXISTS test (
+    id serial PRIMARY KEY
   );";
   $db->exec($sqlList)
   http_response_code(200);
