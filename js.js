@@ -6,12 +6,10 @@ let fullStar = document.querySelector(".imgfull");
 let starContainer = document.querySelector(".star_container");
 
 
-alert(hi);
 console.log(fullStar)
 
 // while clicking, swap the disable class
 starContainer.addEventListener("click", function () {
-  alert(hi);
   console.log(fullStar)
   emptyStar.classList.toggle("disable");
   fullStar.classList.toggle("disable");
