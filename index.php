@@ -54,6 +54,8 @@
 
 <script type="text/javascript">
 $(document).ready(function() {
+
+
 $.ajax({
 
             url: 'api-display.php',
@@ -81,7 +83,7 @@ $.ajax({
 
 													 "<div class='server__ip'>"  +
 													 			"<span>" +
-															 			"<div class='star_container" + id +  "'>" +
+															 			"<div class='star_container'>" +
 																					"<img src='img/star_full.png' class='imgfull" + id + " disable'>" +
 																					"<img src='img/star_empty.png' class='imgempty" + id + "'>" +
 																		"</div>" +
@@ -132,5 +134,19 @@ $.ajax({
             }
         });
     });
+
+		let emptyStar = document.querySelector(".imgempty ");
+		let fullStar = document.querySelector(".imgfull");
+
+		// get images' container
+		let starContainer = document.querySelector(".star_container");
+
+		// while clicking, swap the disable class
+		starContainer.addEventListener("click", function () {
+		  console.log(fullStar);
+		  emptyStar.classList.toggle("disable");
+		  fullStar.classList.toggle("disable");
+		});
+
 </script>
 </html>
