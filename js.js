@@ -6,16 +6,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let starContainer = document.querySelector(".star_container1");
 
   if(starContainer){
-    alert("exists!")
+    alert("exists!");
+    starContainer.addEventListener("click", function () {
+      console.log(fullStar);
+      emptyStar.classList.toggle("disable");
+      fullStar.classList.toggle("disable");
+    });
   }else{
     alert("Doesn't exist");
   }
 
   // while clicking, swap the disable class
-  starContainer.addEventListener("click", function () {
-    console.log(fullStar);
-    emptyStar.classList.toggle("disable");
-    fullStar.classList.toggle("disable");
-  });
+
 });
 // get images elements
