@@ -139,7 +139,7 @@ $.ajax({
 										let fullStar = document.querySelector(`.imgfull${i+1}`);
 										emptyStar.classList.toggle("disable");
 										fullStar.classList.toggle("disable");
-										console.log(fullStar.classList);
+										console.log(Array.from(fullStar.classList));
 										obj = {
 
 										};
