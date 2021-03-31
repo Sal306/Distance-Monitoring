@@ -134,11 +134,15 @@ $.ajax({
 								if(starContainer){
 									for(let i =0; i<starContainer.length; i++){
 									starContainer[i].addEventListener("click", function () {
-										alert(i+1);
+
 										let emptyStar = document.querySelector(`.imgempty${i+1}`);
 										let fullStar = document.querySelector(`.imgfull${i+1}`);
 										emptyStar.classList.toggle("disable");
 										fullStar.classList.toggle("disable");
+										console.log(fullstar.classList);
+										obj = {
+
+										};
 									});
 								}
 								}else{
