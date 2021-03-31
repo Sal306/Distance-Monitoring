@@ -69,26 +69,26 @@ $.ajax({
 
 
   var tr_str = "<section>" +
-										"<header class='serv__head'>" +
-													 "<div>"  +
-													 			"<span class= 'serv__status serv__status--up'>" +
-																			"&#9679;" +
-																 "</span">	+
-																 "<h3 class='serv__name'>" +
-																 			loc +
-																	"</h3>" +
-													 "</div>" +
-
-													 "<div class='server__ip'>"  +
-													 			"<span>" +
-															 			"<div class='star_container" + id +  "'>" +
-																					"<img src='img/star_full.png' class='imgfull" + id + " disable'>" +
-																					"<img src='img/star_empty.png' class='imgempty" + id + "'>" +
-																		"</div>" +
-																		"DateValue" +
-																"</span>" +
-													  "</div>" +
-										 "</header>" ;
+										"<header class='serv__head'>";
+											// 		 "<div>"  +
+											// 		 			"<span class= 'serv__status serv__status--up'>" +
+											// 								"&#9679;" +
+											// 					 "</span">	+
+											// 					 "<h3 class='serv__name'>" +
+											// 					 			loc +
+											// 						"</h3>" +
+											// 		 "</div>" +
+										 //
+											// 		 "<div class='server__ip'>"  +
+											// 		 			"<span>" +
+											// 				 			"<div class='star_container" + id +  "'>" +
+											// 										"<img src='img/star_full.png' class='imgfull" + id + " disable'>" +
+											// 										"<img src='img/star_empty.png' class='imgempty" + id + "'>" +
+											// 							"</div>" +
+											// 							"DateValue" +
+											// 					"</span>" +
+											// 		  "</div>" +
+										 // "</header>" +
 
 
 							//  "<article class='serv__gpu'>" +
