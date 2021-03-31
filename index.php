@@ -43,7 +43,7 @@
 		<div class="container">
 
 
-	
+
 		</div>
 	</main>
 
@@ -125,7 +125,7 @@ $.ajax({
 							 "</article>"  +
 							"</section>"
 							 ;
-							 alert(tr_str);
+							 // alert(tr_str);
 
                     $(".contianer").append(tr_str);
                 }
