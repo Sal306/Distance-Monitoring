@@ -69,9 +69,9 @@ $.ajax({
 
 
   var tr_str = "<section>" +
-										"<header class='serv__head'>";
-											// 		 "<div>"  +
-											// 		 			"<span class= 'serv__status serv__status--up'>" +
+										"<header class='serv__head'>" +
+													 "<div>"  +
+													 			"<span class= 'serv__status serv__status--up'>" ;
 											// 								"&#9679;" +
 											// 					 "</span">	+
 											// 					 "<h3 class='serv__name'>" +
