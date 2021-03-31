@@ -110,7 +110,7 @@
 $(document).ready(function() {
 $.ajax({
 
-            url: "api-display",
+            url: "api-display.php",
             type: 'GET',
             dataType: 'JSON',
             success: function(response) {
