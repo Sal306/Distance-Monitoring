@@ -1,3 +1,4 @@
+$(document).ready(function() {
 // get images elements
 let emptyStar = document.querySelector(".imgempty1");
 let fullStar = document.querySelector(".imgfull1");
@@ -10,4 +11,5 @@ starContainer.addEventListener("click", function () {
   console.log(fullStar);
   emptyStar.classList.toggle("disable");
   fullStar.classList.toggle("disable");
+});
 });
