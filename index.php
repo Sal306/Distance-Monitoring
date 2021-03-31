@@ -84,7 +84,7 @@ $.ajax({
 
 													 "<div class='server__ip'>"  +
 													 			"<span>" +
-															 			"<div class='star_container" + id + "'>" +
+															 			"<div class='star_container'>" +
 																					"<img src='img/star_full.png' class='imgfull" + id + " disable'>" +
 																					"<img src='img/star_empty.png' class='imgempty" + id + "'>" +
 																		"</div>" +
