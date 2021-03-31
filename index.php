@@ -76,7 +76,7 @@ $.ajax({
 																 "</span>"	+
 																 "<h3 class='serv__name'> " + 	loc +
 
-																	"</h3>" ;
+																	"</h3>" +
 													 "</div>" +
 
 													 "<div class='server__ip'>"  +
