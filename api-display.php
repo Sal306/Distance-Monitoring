@@ -10,7 +10,7 @@ require_once('db_connect.php');
 $return_arr = array();
 
 //query to return the values
-$result = pg_query($conn, "SELECT id, distance, location, temp FROM report");
+$result = pg_query($db, "SELECT id, distance, location, temp FROM report");
 
 
 while ($row = pg_fetch_row($result)) {
