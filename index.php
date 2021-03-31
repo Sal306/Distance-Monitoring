@@ -124,7 +124,6 @@ $.ajax({
 							 	"</div>"+
 							 "</article>"  +
 							"</section>";
-							alert(tr_str);
                     $(".container1").append(tr_str);
                 }
 
@@ -135,8 +134,8 @@ $.ajax({
         });
     });
 
-		let emptyStar = document.querySelector(".imgempty ");
-		let fullStar = document.querySelector(".imgfull");
+		let emptyStar = document.querySelector(".imgempty1 ");
+		let fullStar = document.querySelector(".imgfull1");
 
 		// get images' container
 		let starContainer = document.querySelector(".star_container");
