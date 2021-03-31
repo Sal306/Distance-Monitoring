@@ -63,7 +63,7 @@ $.ajax({
                 var len = response.length;
                 for (var i = 0; i < len; i++) {
                     id = response[i].id;
-                    location = response[i].location;
+                    // location = response[i].location;
                   	temp = response[i].temp;
                     distance = response[i].distance;
 
