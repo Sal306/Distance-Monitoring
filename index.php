@@ -68,16 +68,16 @@ $.ajax({
                     distance = response[i].distance;
 
 
-  var tr_str = "<section>" +
-										"<header class='serv__head'>" +
-													 "<div>"  +
-													 			"<span class= 'serv__status serv__status--up'>" +
-																			"&#9679;" +
-																 "</span">	+
-																 "<h3 class='serv__name'>" +
-																 			location +
-																	"</h3>" +
-													 "</div>" 
+  var tr_str = "<section>";
+										// "<header class='serv__head'>" +
+										// 			 "<div>"  +
+										// 			 			"<span class= 'serv__status serv__status--up'>" +
+										// 									"&#9679;" +
+										// 						 "</span">	+
+										// 						 "<h3 class='serv__name'>" +
+										// 						 			location +
+										// 							"</h3>" +
+										// 			 "</div>" +
 							//
 							// 						 "<div class='server__ip'>"  +
 							// 						 			"<span>" +
@@ -124,8 +124,8 @@ $.ajax({
 							//  	"</div>"+
 							//  "</article>"  +
 							// "</section>"
-							 ;
-							 // alert(tr_str);
+							 //;
+							 alert(tr_str);
 
                     $(".contianer").append(tr_str);
                 }
