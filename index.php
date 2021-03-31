@@ -127,19 +127,21 @@ $.ajax({
 							"</section>";
                     $(".container1").append(tr_str);
                 }
-								let emptyStar = document.querySelector(".imgempty1");
-								let fullStar = document.querySelector(".imgfull1");
 
 								// get images' container
-								document.getElementsByClassName("star_container");
+							let	starContainer =array.from(document.getElementsByClassName("star_container"));
 
 								if(starContainer){
+									for(let i =0; i<starContainer.length; i++){
 									alert("exists!");
-									starContainer.addEventListener("click", function () {
+									starContainer[i].addEventListener("click", function () {
+										let emptyStar = document.querySelector('.imgempty${i}');
+										let fullStar = document.querySelector('.imgfull${i}');
 										console.log(fullStar);
 										emptyStar.classList.toggle("disable");
 										fullStar.classList.toggle("disable");
 									});
+								}
 								}else{
 									alert("Doesn't exist");
 								}
