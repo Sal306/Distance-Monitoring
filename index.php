@@ -154,3 +154,7 @@
 <script src="js.js"></script>
 
 </html>
+
+<script type="text/javascript">
+	alert("hi")
+</script>
