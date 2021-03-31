@@ -40,7 +40,7 @@
 	<main>
 
 
-		<div class="container">
+		<div class="container1">
 
 
 
@@ -89,8 +89,6 @@ $.ajax({
 																"</span>" +
 													  "</div>" +
 										 "</header>" +
-
-
 							 "<article class='serv__gpu'>" +
 							 	"<div class='serv__grid-3'>" +
 							 	"	<div class='serv__mod'>" +
@@ -124,9 +122,8 @@ $.ajax({
 							 	"</div>"+
 							 "</article>"  +
 							"</section>";
-							 alert(tr_str);
 
-                    $(".container").append(tr_str);
+                    $(".container1").append(tr_str);
                 }
 
             },
