@@ -85,7 +85,7 @@ $.ajax({
 													 "<div class='server__ip'>"  +
 													 			"<span>" +
 															 			"<div class='star_container'>" +
-																					"<img src='img/star_full.png' class='imgfull" + id + " disable'>" +
+																					"<img src='img/star_full.png' class='imgfull" + id + " false'>" +
 																					"<img src='img/star_empty.png' class='imgempty" + id + "'>" +
 																		"</div>" +
 																		"DateValue" +
@@ -137,9 +137,28 @@ $.ajax({
 
 										let emptyStar = document.querySelector(`.imgempty${i+1}`);
 										let fullStar = document.querySelector(`.imgfull${i+1}`);
-										emptyStar.classList.toggle("disable");
-										fullStar.classList.toggle("disable");
-										console.log(Array.from(fullStar.classList));
+										emptyStar.classList.toggle("false");
+										fullStar.classList.toggle("false");
+										let class = Array.from(fullStar.classList);
+										if(class.include("false")){
+												obj = {
+													"fav": false,
+													"id": i
+												};
+												var json = JSON.stringify(obj);
+												var xp = new XMLHttpRequest();
+												xp.onreadystatechange = function() {
+												            if (this.readyState == 4 && this.status == 201) {
+												                alert("Added to favorites!");
+												            }
+												        }
+
+												        xp.open("PUT", "/api-fav.php" , true);
+												        xp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+												        xp.send(json);
+										}else{
+
+										}
 										obj = {
 
 										};
