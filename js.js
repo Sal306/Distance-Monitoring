@@ -1,5 +1,5 @@
 // get images elements
-let emptyStar = document.querySelector(".imgempty1 ");
+let emptyStar = document.querySelector(".imgempty1");
 let fullStar = document.querySelector(".imgfull1");
 
 // get images' container
