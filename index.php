@@ -74,13 +74,13 @@ $.ajax({
 													 			"<span class= 'serv__status serv__status--up'>" +
 																			"&#9679;" +
 																 "</span">	+
-																 "<h3 class='serv__name'> " + 	id +
+																 // "<h3 class='serv__name'> " + 	id +
+																 //
+																	// "</h3>" ;
+													 "</div>" +
 
-																	"</h3>" ;
-													 // "</div>" +
-													 //
-													 // "<div class='server__ip'>"  ;
-											// 		 			"<span>" +
+													 "<div class='server__ip'>"  +
+													 			"<span>" ;
 											// 				 			"<div class='star_container" + id +  "'>" +
 											// 										"<img src='img/star_full.png' class='imgfull" + id + " disable'>" +
 											// 										"<img src='img/star_empty.png' class='imgempty" + id + "'>" +
