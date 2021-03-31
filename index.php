@@ -133,10 +133,9 @@ $.ajax({
 
 								if(starContainer){
 									for(let i =0; i<starContainer.length; i++){
-									alert("exists!");
 									starContainer[i].addEventListener("click", function () {
-										let emptyStar = document.querySelector('.imgempty${i+1}');
-										let fullStar = document.querySelector('.imgfull${i+1}');
+										let emptyStar = document.querySelector(`.imgempty${i+1}`);
+										let fullStar = document.querySelector(`.imgfull${i+1}`);
 										console.log(fullStar);
 										emptyStar.classList.toggle("disable");
 										fullStar.classList.toggle("disable");
