@@ -74,7 +74,7 @@ $.ajax({
 													 			"<span class= 'serv__status serv__status--up'>" +
 																			"&#9679;" +
 																 "</span">	+
-																 "<h3 class='serv__name'>" + 	loc +
+																 "<h3 class='serv__name'>" + 	id +
 
 																	"</h3>" +
 													 "</div>" +
