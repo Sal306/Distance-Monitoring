@@ -41,63 +41,9 @@
 
 
 		<div class="container">
-			<section class="serv">
-								<header class="serv__head">
-												<div>
-													<span class="serv__status serv__status--up">
-														&#9679;
-													</span>
-													<h3 class="serv__name">Location</h3>
-												</div>
-
-												<div class="serv__ip">
-														<span>
-															  	<div class="star_container">
-																				 <img src="img/star_full.png" class="imgfull disable" />
-																				 <img src="img/star_empty.png" class="imgempty " />
-																  </div>
-														</span>
-														Date
-												</div>
-								</header>
-				<article class="serv__gpu">
-					<div class="serv__grid-3">
-						<div class="serv__mod">
-							<div class="serv__modLabel serv__modLabel--red">
-								Distance
-							</div>
-							<div class="serv__modNumber">
-								DistValue<label class="serv__modUnit">M</label>
-							</div>
-						</div>
-
-						<div class="serv__mod">
-							<div class="serv__modLabel serv__modLabel--green">
-								Temp
-							</div>
-							<div class="serv__modNumber">
-								TempValue<label class="serv__modUnit">&deg;C</label>
-							</div>
-						</div>
-
-						<div class="serv__mod">
-							<div class="serv__modLabel serv__modLabel--yellow">
-								Time
-							</div>
-							<div class="serv__modNumber">
-								TimeValue<label class="serv__modUnit"></label>
-							</div>
-						</div>
 
 
-					</div>
-				</article>
-
-
-			</section>
-
-
-
+	
 		</div>
 	</main>
 
@@ -110,7 +56,7 @@
 $(document).ready(function() {
 $.ajax({
 
-            url: "api-display.php",
+            url: 'api-display.php',
             type: 'GET',
             dataType: 'JSON',
             success: function(response) {
@@ -179,6 +125,7 @@ $.ajax({
 							 "</article>"  +
 							"</section>"
 							 ;
+							 alert(tr_str);
 
                     $(".contianer").append(tr_str);
                 }
