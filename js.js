@@ -5,6 +5,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
   // get images' container
   let starContainer = document.querySelector(".star_container1");
 
+  if(starContainer){
+    alert("exists!")
+  }else{
+    alert("Doesn't exist");
+  }
+
   // while clicking, swap the disable class
   starContainer.addEventListener("click", function () {
     console.log(fullStar);
