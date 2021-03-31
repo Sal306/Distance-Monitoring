@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$('document').ready(function() {
 // get images elements
 let emptyStar = document.querySelector(".imgempty1");
 let fullStar = document.querySelector(".imgfull1");
