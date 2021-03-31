@@ -131,7 +131,7 @@ $.ajax({
 								let fullStar = document.querySelector(".imgfull1");
 
 								// get images' container
-								let starContainer = document.querySelector(".star_container1");
+								document.getElementsByClassName("star_container");
 
 								if(starContainer){
 									alert("exists!");
