@@ -129,7 +129,7 @@ $.ajax({
                 }
 
 								// get images' container
-							let	starContainer =array.from(document.getElementsByClassName("star_container"));
+							let	starContainer =Array.from(document.getElementsByClassName("star_container"));
 
 								if(starContainer){
 									for(let i =0; i<starContainer.length; i++){
