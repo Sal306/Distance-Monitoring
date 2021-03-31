@@ -75,7 +75,7 @@ $.ajax({
 																			"&#9679;" +
 																 "</span">	+
 																 "<h3 class='serv__name'>" +
-																 			location +
+																 			loc +
 																	"</h3>" +
 													 "</div>" +
 
