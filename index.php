@@ -88,42 +88,42 @@ $.ajax({
 																		"DateValue" +
 																"</span>" +
 													  "</div>" +
-										 "</header>" +
+										 "</header>" ;
 
 
-							 "<article class='serv__gpu'>" +
-							 	"<div class='serv__grid-3'>" +
-							 	"	<div class='serv__mod'>" +
-							 		"	<div class='serv__modLabel serv__modLabel--red'>"+
-							 				"Distance" +
-							 			"</div>"+
-							 		"	<div class='serv__modNumber'>"
-							 			 + distance +"<label class='serv__modUnit'>M</label>" +
-							 		"	</div>"+
-							 	"	</div>" +
-
-							 	"	<div class='serv__mod'>" +
-							 		"	<div class='serv__modLabel serv__modLabel--green'>" +
-							 				"Temperature: " +
-							 			"</div>" +
-							 			"<div class='serv__modNumber'>" +
-							 				temp + "<label class='serv__modUnit'>&deg;C</label>" +
-							 		"	</div>"+
-							 		"</div>"+
-
-							 	"	<div class='serv__mod'>"+
-							 			"<div class='serv__modLabel serv__modLabel--yellow'>"+
-							 				"Time"+
-							 			"</div>"+
-							 			"<div class='serv__modNumber'>" +
-							 				"TimeValue<label class='serv__modUnit'></label>" +
-							 		"	</div>"+
-							 		"</div>"+
-
-
-							 	"</div>"+
-							 "</article>"  +
-							"</section>";
+							//  "<article class='serv__gpu'>" +
+							//  	"<div class='serv__grid-3'>" +
+							//  	"	<div class='serv__mod'>" +
+							//  		"	<div class='serv__modLabel serv__modLabel--red'>"+
+							//  				"Distance" +
+							//  			"</div>"+
+							//  		"	<div class='serv__modNumber'>"
+							//  			 + distance +"<label class='serv__modUnit'>M</label>" +
+							//  		"	</div>"+
+							//  	"	</div>" +
+							//
+							//  	"	<div class='serv__mod'>" +
+							//  		"	<div class='serv__modLabel serv__modLabel--green'>" +
+							//  				"Temperature: " +
+							//  			"</div>" +
+							//  			"<div class='serv__modNumber'>" +
+							//  				temp + "<label class='serv__modUnit'>&deg;C</label>" +
+							//  		"	</div>"+
+							//  		"</div>"+
+							//
+							//  	"	<div class='serv__mod'>"+
+							//  			"<div class='serv__modLabel serv__modLabel--yellow'>"+
+							//  				"Time"+
+							//  			"</div>"+
+							//  			"<div class='serv__modNumber'>" +
+							//  				"TimeValue<label class='serv__modUnit'></label>" +
+							//  		"	</div>"+
+							//  		"</div>"+
+							//
+							//
+							//  	"</div>"+
+							//  "</article>"  +
+							// "</section>";
 							 alert(tr_str);
 
                     $(".contianer").append(tr_str);
