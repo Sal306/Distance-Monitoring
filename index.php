@@ -140,7 +140,7 @@ $.ajax({
 										emptyStar.classList.toggle("false");
 										fullStar.classList.toggle("false");
 										let clas = Array.from(fullStar.classList);
-										if(clas.include("false")){
+										if(clas.includes("false")){
 												obj = {
 													"fav": false,
 													"id": i
