@@ -80,7 +80,7 @@ $.ajax({
 													 "</div>" +
 
 													 "<div class='server__ip'>"  +
-													 			"<span>" ;
+													 			"<span>" +
 															 			"<div class='star_container" + id +  "'>" +
 																					"<img src='img/star_full.png' class='imgfull" + id + " disable'>" +
 																					"<img src='img/star_empty.png' class='imgempty" + id + "'>" +
@@ -122,7 +122,7 @@ $.ajax({
 							 	"</div>"+
 							 "</article>"  +
 							"</section>";
-
+							alert(tr_str);
                     $(".container1").append(tr_str);
                 }
 
