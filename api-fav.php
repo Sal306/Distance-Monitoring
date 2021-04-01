@@ -15,7 +15,7 @@ echo ($id);
 //DB connection
 require_once('db_connect.php');
 
-$result = $db->prepare("UPDATE report SET fav='" . $fav . "' where id='" . $id ."' FROM report");
+$result = $dbb->prepare("UPDATE report SET fav='" . $fav . "' where id='" . $id ."' FROM report");
 
 $result->execute();
 
