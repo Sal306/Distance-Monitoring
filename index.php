@@ -154,6 +154,7 @@ $.ajax({
 											}
 
 												var json = JSON.stringify(obj);
+												alert(json);
 
 												var xp = new XMLHttpRequest();
 												xp.onreadystatechange = function() {
@@ -164,9 +165,8 @@ $.ajax({
 
 												        xp.open("PUT", "/api-fav.php" , true);
 												        xp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-																alert(json);
 												        xp.send(json);
-
+																return;
 
 									});
 								}
