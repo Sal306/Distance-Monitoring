@@ -140,12 +140,21 @@ $.ajax({
 										emptyStar.classList.toggle("false");
 										fullStar.classList.toggle("false");
 										let clas = Array.from(fullStar.classList);
+
 										if(clas.includes("false")){
 												obj = {
 													"fav": false,
 													"id": i
 												};
+											}else{
+												obj = {
+													"fav": true,
+													"id": i
+												};
+											}
+
 												var json = JSON.stringify(obj);
+
 												var xp = new XMLHttpRequest();
 												xp.onreadystatechange = function() {
 												            if (this.readyState == 4 && this.status == 201) {
@@ -156,12 +165,8 @@ $.ajax({
 												        xp.open("PUT", "/api-fav.php" , true);
 												        xp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 												        xp.send(json);
-										}else{
 
-										}
-										obj = {
 
-										};
 									});
 								}
 								}else{
