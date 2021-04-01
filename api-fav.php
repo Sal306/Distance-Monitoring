@@ -7,8 +7,8 @@ header("Access-Control-Allow-Header: Acess-Control-Allow-Headers, Content-Type, 
 
 $data = json_decode(file_get_contents("php://input"), true);
 //getting the values of the decoded json
-$fav = true;
-$id = 1;
+$fav = $data["fav"];
+$id = $data['id'];
 echo ($fav);
 echo ($id);
 
