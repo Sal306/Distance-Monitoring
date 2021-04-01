@@ -164,6 +164,7 @@ $.ajax({
 
 												        xp.open("PUT", "/api-fav.php" , true);
 												        xp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+																alert(json);
 												        xp.send(json);
 
 
