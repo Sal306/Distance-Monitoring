@@ -76,11 +76,11 @@ $.ajax({
                     distance = response[i].distance;
 					fav = response[i].fav;
 
-					if(fav=='false'){
+					if(fav=='true'){
 						 img1 = "false";
 						 img2 = "";
 					}
-					else if(fav=='true'){
+					else{
 						 img2 = "false";
 						 img1 = "";
 					}
