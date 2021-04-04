@@ -55,7 +55,9 @@
 
 <script type="text/javascript">
 $(document).ready(function() {
-	var ID;
+	var ID, img1, img2;
+	img1 = "";
+	img2 = "";
 
 
 $.ajax({
@@ -72,6 +74,15 @@ $.ajax({
                     distance = response[i].distance;
 					fav = response[i].fav;
 
+					if(fav='false'){
+						 img1 = "false";
+						 img2 = "";
+					}
+					else{
+						 img2 = "false";
+						 img1 = "";
+					}
+
 
   var tr_str = "<section>" +
 										"<header class='serv__head'>" +
@@ -87,8 +98,8 @@ $.ajax({
 													 "<div class='server__ip'>"  +
 													 			"<span>" +
 															 			"<div class='star_container'  id='" + id +  "' >" +
-																					"<img src='img/star_full.png' class='imgfull" + id + " " + fav + " ' id='" + id +  "'>" +
-																					"<img src='img/star_empty.png' class='imgempty" + id + "'>" +
+																					"<img src='img/star_full.png' class='imgfull" + id + " " + img1 + " ' id='" + id +  "'>" +
+																					"<img src='img/star_empty.png' class='imgempty" + id + " " + img2 +  "'>" +
 																		"</div>" +
 																		"DateValue" +
 																"</span>" +
@@ -139,11 +150,11 @@ $.ajax({
 										ID = starContainer[i].id
 										let emptyStar = document.querySelector(`.imgempty${ID}`);
 										let fullStar = document.querySelector(`.imgfull${ID}`);
-										emptyStar.classList.toggle("null");
-										fullStar.classList.toggle("null");
+										emptyStar.classList.toggle("false");
+										fullStar.classList.toggle("false");
 										let clas = Array.from(fullStar.classList);
 
-										if(clas.includes("null")){
+										if(clas.includes("false")){
 												obj = {
 													"fav": 'false',
 													"id": ID
