@@ -142,7 +142,7 @@ $.ajax({
 										emptyStar.classList.toggle("null");
 										fullStar.classList.toggle("null");
 										ID = starContainer[i].id
-										console.log(ID)
+										alert(ID)
 										let clas = Array.from(fullStar.classList);
 
 										if(clas.includes("null")){
