@@ -68,8 +68,8 @@ $.ajax({
             success: function(response) {
                 var len = response.length;
                 for (var i = 0; i < len; i++) {
-					img2 = "false";
-					img1 = "";
+					img1 = "false";
+					img2 = "";
                     id = response[i].id;
                     loc = response[i].location;
                   	temp = response[i].temp;
