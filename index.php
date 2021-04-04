@@ -87,7 +87,7 @@ $.ajax({
 													 "<div class='server__ip'>"  +
 													 			"<span>" +
 															 			"<div class='star_container'>" +
-																					"<img src='img/star_full.png' class='imgfull" + id + " " + fav + "'>" +
+																					"<img src='img/star_full.png' class='imgfull" + id + " " + fav + " ' id='" + id +  "'>" +
 																					"<img src='img/star_empty.png' class='imgempty" + id + "'>" +
 																		"</div>" +
 																		"DateValue" +
@@ -141,17 +141,19 @@ $.ajax({
 										let fullStar = document.querySelector(`.imgfull${i+1}`);
 										emptyStar.classList.toggle("null");
 										fullStar.classList.toggle("null");
+										ID = starContainer[i].id
+										console.log(ID)
 										let clas = Array.from(fullStar.classList);
 
 										if(clas.includes("null")){
 												obj = {
 													"fav": false,
-													"id": i+1
+													"id": ID
 												};
 											}else{
 												obj = {
 													"fav": true,
-													"id": i+1
+													"id": ID
 												};
 											}
 
