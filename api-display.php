@@ -10,16 +10,17 @@ require_once('db_connect.php');
 $return_arr = array();
 
 //query to return the values
-$result = $db->query("SELECT id, distance, location, temp, favorite FROM report");
+$result = $db->query("SELECT id, distance, location, temp FROM report");
 
 while ($row = $result->fetch()) {
   $id = $row['id'];
   $distance = $row['distance'];
   $location = $row['location'];
   $temp = $row['temp'];
-  $fav = $row['favorite']
+  $fav = $row['fav'];
 
-    $return_arr[] = array(
+
+    $return_arr[] = array( 
       "id" => $id,
       "distance" => $distance,
       "location" => $location,
