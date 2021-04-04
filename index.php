@@ -68,13 +68,15 @@ $.ajax({
             success: function(response) {
                 var len = response.length;
                 for (var i = 0; i < len; i++) {
+					img1="";
+					img1="";
                     id = response[i].id;
                     loc = response[i].location;
                   	temp = response[i].temp;
                     distance = response[i].distance;
 					fav = response[i].fav;
 
-					if(fav='false'){
+					if(fav=='false'){
 						 img1 = "false";
 						 img2 = "";
 					}
