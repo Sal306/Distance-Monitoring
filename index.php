@@ -69,6 +69,7 @@ $.ajax({
                     loc = response[i].location;
                   	temp = response[i].temp;
                     distance = response[i].distance;
+					fav = response[i].fav;
 
 
   var tr_str = "<section>" +
@@ -85,7 +86,7 @@ $.ajax({
 													 "<div class='server__ip'>"  +
 													 			"<span>" +
 															 			"<div class='star_container'>" +
-																					"<img src='img/star_full.png' class='imgfull" + id + " false'>" +
+																					"<img src='img/star_full.png' class='imgfull" + id + " " + fav + "'>" +
 																					"<img src='img/star_empty.png' class='imgempty" + id + "'>" +
 																		"</div>" +
 																		"DateValue" +
