@@ -77,8 +77,8 @@ $.ajax({
 					fav = response[i].fav;
 
 					if(fav==true){
-						 img1 = "false";
-						 img2 = "";
+						 img2 = "false";
+						 img1 = "";
 					}
 					
 
