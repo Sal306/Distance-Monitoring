@@ -136,23 +136,22 @@ $.ajax({
 								if(starContainer){
 									for(let i =0; i<starContainer.length; i++){
 									starContainer[i].addEventListener("click", function () {
-
-										let emptyStar = document.querySelector(`.imgempty${i+1}`);
-										let fullStar = document.querySelector(`.imgfull${i+1}`);
+										ID = starContainer[i].id
+										let emptyStar = document.querySelector(`.imgempty${ID}`);
+										let fullStar = document.querySelector(`.imgfull${ID}`);
 										emptyStar.classList.toggle("null");
 										fullStar.classList.toggle("null");
-										alert(starContainer[i].id)
 										let clas = Array.from(fullStar.classList);
 
 										if(clas.includes("null")){
 												obj = {
 													"fav": false,
-													"id": 1
+													"id": ID
 												};
 											}else{
 												obj = {
 													"fav": true,
-													"id": 1
+													"id": ID
 												};
 											}
 
