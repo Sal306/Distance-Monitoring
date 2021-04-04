@@ -10,7 +10,7 @@ require_once('db_connect.php');
 $return_arr = array();
 
 //query to return the values
-$result = $db->query("SELECT id, distance, location, temp FROM report");
+$result = $db->query("SELECT id, distance, location, temp FROM report ORDER BY id ASC");
 
 while ($row = $result->fetch()) {
   $id = $row['id'];
