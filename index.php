@@ -69,7 +69,7 @@ $.ajax({
                 var len = response.length;
                 for (var i = 0; i < len; i++) {
 					img1="";
-					img1="";
+					img2="";
                     id = response[i].id;
                     loc = response[i].location;
                   	temp = response[i].temp;
