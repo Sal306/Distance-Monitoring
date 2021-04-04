@@ -80,7 +80,7 @@ $.ajax({
 						 img1 = "false";
 						 img2 = "";
 					}
-					else{
+					else if(fav=='true'){
 						 img2 = "false";
 						 img1 = "";
 					}
