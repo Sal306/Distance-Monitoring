@@ -145,12 +145,12 @@ $.ajax({
 
 										if(clas.includes("null")){
 												obj = {
-													"fav": false,
+													"fav": 'false',
 													"id": ID
 												};
 											}else{
 												obj = {
-													"fav": true,
+													"fav": 'true',
 													"id": ID
 												};
 											}

@@ -9,8 +9,7 @@ $data = json_decode(file_get_contents("php://input"), true);
 //getting the values of the decoded json
 $fav = $data["fav"];
 $id = $data['id'];
-echo ($fav);
-echo ($id);
+
 
 //DB connection
 require_once('db_connect.php');
