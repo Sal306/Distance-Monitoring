@@ -75,7 +75,6 @@ $.ajax({
                   	temp = response[i].temp;
                     distance = response[i].distance;
 					fav = response[i].fav;
-					alert("1" + fav + "2");
 
 					if(fav==true){
 						 img1 = "false";
@@ -167,7 +166,6 @@ $.ajax({
 											}
 
 												var json = JSON.stringify(obj);
-												alert(json);
 
 												var xp = new XMLHttpRequest();
 												xp.onreadystatechange = function() {
