@@ -141,19 +141,18 @@ $.ajax({
 										let fullStar = document.querySelector(`.imgfull${i+1}`);
 										emptyStar.classList.toggle("null");
 										fullStar.classList.toggle("null");
-										ID = starContainer[i].id
-										alert(ID)
+										alert(starContainer[i].id)
 										let clas = Array.from(fullStar.classList);
 
 										if(clas.includes("null")){
 												obj = {
 													"fav": false,
-													"id": ID
+													"id": 1
 												};
 											}else{
 												obj = {
 													"fav": true,
-													"id": ID
+													"id": 1
 												};
 											}
 
