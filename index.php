@@ -68,22 +68,20 @@ $.ajax({
             success: function(response) {
                 var len = response.length;
                 for (var i = 0; i < len; i++) {
-					img1="";
-					img2="";
+					img2 = "false";
+					img1 = "";
                     id = response[i].id;
                     loc = response[i].location;
                   	temp = response[i].temp;
                     distance = response[i].distance;
 					fav = response[i].fav;
+					alert(fav);
 
 					if(fav=='true'){
 						 img1 = "false";
 						 img2 = "";
 					}
-					else{
-						 img2 = "false";
-						 img1 = "";
-					}
+					
 
 
   var tr_str = "<section>" +
