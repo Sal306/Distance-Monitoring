@@ -15,3 +15,13 @@ file_put_contents($file, $data);
 // Insert data to db
 
  ?>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+ <?php echo $data ?>
+  </body>
+</html>
