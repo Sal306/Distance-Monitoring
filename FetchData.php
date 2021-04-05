@@ -5,8 +5,9 @@ $temp = $_POST["temp"];
 $humidity = $_POST["hum"];
 
 
-echo $time . " - " . $distance .  " - " . $temp    . " - " . $humidity
+$data = $time . " - " . $distance .  " - " . $temp    . " - " . $humidity
 
+$file = "temp.html";
 
 
 // Insert data to db
