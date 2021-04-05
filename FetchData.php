@@ -1,11 +1,11 @@
 <?php
 $time = time();
-$distance = $_POST["di"];
+$distance = $_POST["dist"];
 $temp = $_POST["temp"];
 $humidity = $_POST["hum"];
 
 
-echo $time . $distance . $temp . $humidity
+echo $time . " - " . $distance .  " - " . $temp    . " - " . $humidity
 
 
 
