@@ -9,6 +9,7 @@ $data = $time . " - " . $distance .  " - " . $temp    . " - " . $humidity;
 
 $file = "temp.html";
 
+file_put_contents($file, $data);
 
 // Insert data to db
 
