@@ -5,7 +5,7 @@ $temp = $_POST["temp"];
 $humidity = $_POST["hum"];
 
 
-$data = $time . " - " . $distance .  " - " . $temp    . " - " . $humidity
+$data = $time . " - " . $distance .  " - " . $temp    . " - " . $humidity;
 
 $file = "temp.html";
 
