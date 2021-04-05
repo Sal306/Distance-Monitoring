@@ -1,6 +1,8 @@
 <?php
 $time = time();
-$distance = $_POST["temp"];
+$distance = $_POST["dist"];
+$temp = $_POST["temp"];
+$humidity = $_POST["hum"];
 
 
 
