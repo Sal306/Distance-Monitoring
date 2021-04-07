@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>GPU Info</title>
+	<title>AUIS Monitoring System</title>
 	<link rel="stylesheet" type="text/css" href="ss.css">
 	<link rel="stylesheet" type="text/css" href="https://github.com/TixieBorg/Ethereum-panel/blob/6797e8e7aef50453b1e1236414c31300f7abf37f/css/design.css">
 </head>
