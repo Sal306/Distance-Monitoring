@@ -77,6 +77,34 @@
         }
       }
     });
+
+    $(document).ready(function() {
+	
+
+
+$.ajax({
+
+            url: 'api-chart.php',
+            type: 'GET',
+            dataType: 'JSON',
+            success: function(response) {
+                console.log(response);
+                // var len = response.length;
+                // for (var i = 0; i < len; i++) {
+				// 	img1 = "false";
+				// 	img2 = "";
+                //     id = response[i].id;
+                //     hum = response[i].humidity;
+                //   	temp = response[i].temp;
+                //     distance = response[i].distance;
+				// 	fav = response[i].fav;
+				// 	date = response[i].date;
+
+                },
+                error: function(xhr, status, error) {
+                alert(error);
+            }
+					
   </script>
 </body>
 </html>
