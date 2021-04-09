@@ -76,6 +76,7 @@ $.ajax({
                     distance = response[i].distance;
 					fav = response[i].fav;
 					date = response[i].date;
+					alert(response);
 
 					if(fav==true){
 						 img2 = "false";
