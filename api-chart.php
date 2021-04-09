@@ -16,7 +16,7 @@ when date > now() - interval '2 week' then 'week2'
 when date > now() - interval '3 week' then 'week3' 
 when date > now() - interval '4 week' then 'week4' 
 end
-from report ) as A where A.case !='null';");
+from report ) as A where A.case !='null'");
 
 while ($row = $result->fetch()) {
   $id = $row['id'];
