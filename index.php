@@ -101,7 +101,7 @@ $.ajax({
 																					"<img src='img/star_full.png' class='imgfull" + id + " " + img1 + " ' id='" + id +  "'>" +
 																					"<img src='img/star_empty.png' class='imgempty" + id + " " + img2 +  "'>" +
 																		"</div>" +
-																		"DateValue" +
+																		  date +
 																"</span>" +
 													  "</div>" +
 										 "</header>" +
