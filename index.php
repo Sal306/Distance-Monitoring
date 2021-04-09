@@ -71,10 +71,11 @@ $.ajax({
 					img1 = "false";
 					img2 = "";
                     id = response[i].id;
-                    loc = response[i].location;
+                    hum = response[i].humidity;
                   	temp = response[i].temp;
                     distance = response[i].distance;
 					fav = response[i].fav;
+					date = response[i].date;
 
 					if(fav==true){
 						 img2 = "false";
@@ -89,7 +90,7 @@ $.ajax({
 													 			"<span class= 'serv__status serv__status--up'>" +
 																			"&#9679;" +
 																 "</span>"	+
-																 "<h3 class='serv__name'> " + 	loc +
+																 "<h3 class='serv__name'> " + hum +
 
 																	"</h3>" +
 													 "</div>" +

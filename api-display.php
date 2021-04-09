@@ -10,22 +10,23 @@ require_once('db_connect.php');
 $return_arr = array();
 
 //query to return the values
-$result = $db->query("SELECT id, distance, location, temp, fav FROM report ORDER BY id ASC");
+$result = $db->query("SELECT id, distance, humidity, temp, fav, date FROM report ORDER BY id ASC");
 
 while ($row = $result->fetch()) {
   $id = $row['id'];
   $distance = $row['distance'];
-  $location = $row['location'];
+  $humidity = $row['humidity'];
   $temp = $row['temp'];
   $fav = $row['fav'];
-
+  $date = $row['date'];
 
     $return_arr[] = array( 
       "id" => $id,
       "distance" => $distance,
-      "location" => $location,
+      "humidity" => $humidity,
       "temp" => $temp,
-      "fav" => $fav
+      "fav" => $fav, 
+      'date' => $date
   );
 }
 

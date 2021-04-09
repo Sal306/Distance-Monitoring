@@ -27,15 +27,6 @@ $db = new PDO($dsn);
 
       }
 
-
-
-
-        // $sqlList = "";
-        //
-        //   $db->exec($sqlList)
-        //   http_response_code(200);
-
-
     else {
       echo "Error";
     }
