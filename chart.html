@@ -28,13 +28,13 @@
                 success: function(response) {
                     for(var i = 0; i < response.length; i++){
                     if(response.case == 'week1'){
-                        week1.append(response[i])
+                        week1 = response[i].dist
                     }else if(response.case == 'week2'){
-                        week2.append(response[i])
+                        week2= response[i].dist
                     }else if(response.case == 'week3'){
-                        week3.append(response[i])
+                        week3= response[i].dist
                     }else{
-                        week4.append(response[i])
+                        week4= response[i].dist
                     }
                 }
                     let myChart = document.getElementById('myChart').getContext('2d');
@@ -51,7 +51,7 @@
         datasets:[{
           label:'distance',
           
-          data:response[0].dist,
+          data:[week1, week2, week3, week4],
           //backgroundColor:'green',
           backgroundColor:[
             'rgba(255, 99, 132, 0.6)',
