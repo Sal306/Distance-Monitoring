@@ -19,11 +19,11 @@ end
 from report ) as A where A.case !='null'");
 
 while ($row = $result->fetch()) {
-  $id = $row['id'];
+  $dist = $row['distance'];
   $case = $row['case'];
   
     $return_arr[] = array( 
-      "id" => $id,
+      "dist" => $dist,
       "case" => $case
   );
 }
