@@ -27,11 +27,11 @@
                 dataType: 'JSON',
                 success: function(response) {
                     for(var i = 0; i < response.length; i++){
-                    if(response.case == 'week1'){
+                    if(response[i].case == 'week1'){
                         week1 = response[i].dist
-                    }else if(response.case == 'week2'){
+                    }else if(response[i].case == 'week2'){
                         week2= response[i].dist
-                    }else if(response.case == 'week3'){
+                    }else if(response[i].case == 'week3'){
                         week3= response[i].dist
                     }else{
                         week4= response[i].dist
@@ -47,7 +47,7 @@
     let massPopChart = new Chart(myChart, {
       type:'bar', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
       data:{
-        labels:['Boston', 'Worcester', 'Springfield', 'Lowell', 'Cambridge', 'New Bedford'],
+        labels:['Week 1', 'Week 2', 'Week 3 ', 'Week 4'],
         datasets:[{
           label:'distance',
           
