@@ -15,7 +15,7 @@
   </div>
 
   <script>
-      var data;
+      var week1, week2, week3, week4 ;
       $(document).ready(function() {
 	
 
@@ -26,8 +26,17 @@
                 type: 'GET',
                 dataType: 'JSON',
                 success: function(response) {
-                    console.log(response[0].case);
-                    data = response;
+                    for(var i = 0; i < response.length; i++){
+                    if(response.case == 'week1'){
+                        week1.append(response[i])
+                    }else if(response.case == 'week2'){
+                        week2.append(response[i])
+                    }else if(response.case == 'week3'){
+                        week3.append(response[i])
+                    }else{
+                        week4.append(response[i])
+                    }
+                }
                     let myChart = document.getElementById('myChart').getContext('2d');
 
     // Global Options
