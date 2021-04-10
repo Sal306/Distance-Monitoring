@@ -26,7 +26,7 @@
                 type: 'GET',
                 dataType: 'JSON',
                 success: function(response) {
-                    console.log(response);
+                    console.log(response.case);
                     data = response;
                     let myChart = document.getElementById('myChart').getContext('2d');
 
@@ -42,7 +42,7 @@
         datasets:[{
           label:'distance',
           
-          data:data,
+          data:data.case,
           //backgroundColor:'green',
           backgroundColor:[
             'rgba(255, 99, 132, 0.6)',
