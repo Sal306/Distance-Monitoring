@@ -15,6 +15,7 @@
   </div>
 
   <script>
+      let data;
     let myChart = document.getElementById('myChart').getContext('2d');
 
     // Global Options
@@ -28,14 +29,7 @@
         labels:['Boston', 'Worcester', 'Springfield', 'Lowell', 'Cambridge', 'New Bedford'],
         datasets:[{
           label:'distance',
-          data:[
-            1.4,
-            2.7,
-            3.1,
-            0.75,
-            1.5,
-            2.5
-          ],
+          data:data,
           //backgroundColor:'green',
           backgroundColor:[
             'rgba(255, 99, 132, 0.6)',
@@ -90,6 +84,7 @@ $.ajax({
             dataType: 'JSON',
             success: function(response) {
                 console.log(response);
+                date = response;
                 // var len = response.length;
                 // for (var i = 0; i < len; i++) {
 				// 	img1 = "false";
