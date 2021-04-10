@@ -15,7 +15,7 @@
   </div>
 
   <script>
-      let data;
+      var data;
       $(document).ready(function() {
 	
 
@@ -27,24 +27,8 @@
                 dataType: 'JSON',
                 success: function(response) {
                     console.log(response);
-                    date = response;
-                    // var len = response.length;
-                    // for (var i = 0; i < len; i++) {
-                    // 	img1 = "false";
-                    // 	img2 = "";
-                    //     id = response[i].id;
-                    //     hum = response[i].humidity;
-                    //     temp = response[i].temp;
-                    //     distance = response[i].distance;
-                    // 	fav = response[i].fav;
-                    // 	date = response[i].date;
-                    },
-                    error: function(xhr, status, error) {
-                    alert(error);
-                }
-            });
-        });
-    let myChart = document.getElementById('myChart').getContext('2d');
+                    data = response;
+                    let myChart = document.getElementById('myChart').getContext('2d');
 
     // Global Options
     Chart.defaults.global.defaultFontFamily = 'Lato';
@@ -57,6 +41,7 @@
         labels:['Boston', 'Worcester', 'Springfield', 'Lowell', 'Cambridge', 'New Bedford'],
         datasets:[{
           label:'distance',
+          
           data:data,
           //backgroundColor:'green',
           backgroundColor:[
@@ -100,6 +85,23 @@
         }
       }
     });
+                    // var len = response.length;
+                    // for (var i = 0; i < len; i++) {
+                    // 	img1 = "false";
+                    // 	img2 = "";
+                    //     id = response[i].id;
+                    //     hum = response[i].humidity;
+                    //     temp = response[i].temp;
+                    //     distance = response[i].distance;
+                    // 	fav = response[i].fav;
+                    // 	date = response[i].date;
+                    },
+                    error: function(xhr, status, error) {
+                    alert(error);
+                }
+            });
+        });
+    
 
     
 
