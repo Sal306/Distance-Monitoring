@@ -10,7 +10,7 @@ require_once('db_connect.php');
 $return_arr = array();
 
 //query to return the values
-$result = $db->query("select * from (select id, case
+$result = $db->query("select * from (select distance, case
 when date > now() - interval '1 week'  then 'week1' 
 when date > now() - interval '2 week' then 'week2'
 when date > now() - interval '3 week' then 'week3' 
