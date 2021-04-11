@@ -26,17 +26,14 @@
                 type: 'GET',
                 dataType: 'JSON',
                 success: function(response) {
-                    for(var i = 0; i < response.length; i++){
-                    if(response[i].case == 'week1'){
-                        week1 = response[i].dist
-                    }else if(response[i].case == 'week2'){
-                        week2= response[i].dist
-                    }else if(response[i].case == 'week3'){
-                        week3= response[i].dist
-                    }else{
-                        week4= response[i].dist
-                    }
-                }
+                    
+                    
+                        week1 = response[0].bar1
+                        week2 = response[0].bar2
+                        week3 = response[0].bar3
+                        week4 = response[0].bar4
+                    
+                
                     let myChart = document.getElementById('myChart').getContext('2d');
 
     // Global Options
