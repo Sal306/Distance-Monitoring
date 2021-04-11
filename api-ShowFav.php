@@ -23,7 +23,7 @@ while ($row = $result->fetch()) {
 
 
     $return_arr[] = array( 
-        "id"   => $id
+        "id"   => $id,
         "date" => $date,
         "dist" => $dist,
         "hum" => $hum,
