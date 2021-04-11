@@ -14,7 +14,11 @@ $return_arr = array();
 report where fav ='true'");
 
 while ($row = $result->fetch()) {
-    $week4 = $row['avg'];
+    $date = $row['date'];
+    $dist = $row['distance'];
+    $hum = $row['humidity'];
+    $temp = $row['temp'];
+
 
 
     $return_arr[] = array( 
