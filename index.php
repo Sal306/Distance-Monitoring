@@ -43,7 +43,7 @@
     <a class="nav-link " href="./favorite.html">Favorite</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./Chart.html">Chart</a>
+    <a class="nav-link" href="./chart.html">Chart</a>
   </li>
   
 </ul>
