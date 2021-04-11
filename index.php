@@ -35,6 +35,18 @@
 				</div>
 			</div>
 		</div>
+
+		<div>
+		<ul class="nav">
+  <li class="nav-item">
+    <a class="nav-link " href="./favorite.html">Favorite</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./Chart.html">Chart</a>
+  </li>
+  
+</ul>
+		</div>
 	</header>
 
 	<main>
@@ -91,7 +103,7 @@ $.ajax({
 													 			"<span class= 'serv__status serv__status--up'>" +
 																			"&#9679;" +
 																 "</span>"	+
-																 "<h3 class='serv__name'> " + hum +
+																 "<h3 class='serv__name'> "  +
 
 																	"</h3>" +
 													 "</div>" +
@@ -128,10 +140,10 @@ $.ajax({
 
 							 	"	<div class='serv__mod'>"+
 							 			"<div class='serv__modLabel serv__modLabel--yellow'>"+
-							 				"Time"+
+							 				"Hum"+
 							 			"</div>"+
-							 			"<div class='serv__modNumber'>" +
-							 				"TimeValue<label class='serv__modUnit'></label>" +
+							 			"<div class='serv__modNumber'>" + hum + 
+							 				"<label class='serv__modUnit'></label>" +
 							 		"	</div>"+
 							 		"</div>"+
 
@@ -172,7 +184,7 @@ $.ajax({
 												var xp = new XMLHttpRequest();
 												xp.onreadystatechange = function() {
 												            if (this.readyState == 4 && this.status == 201) {
-																alert('added to favorites');
+																console.log("Change was made");
 												            }
 												        }
 

@@ -10,6 +10,7 @@
 </html>
 
 <script>
+   $(document).ready(function() {
    let hum = document.getElementById('hum'); 
    let dist = document.getElementById('dist');
    let temp = document.getElementById('temp'); 
@@ -40,5 +41,6 @@
         };
         //sending the ajax
         $.ajax(options);
+      });
 
 </script>

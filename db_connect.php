@@ -17,8 +17,8 @@ $db = new PDO($dsn);
           id serial PRIMARY KEY,
           distance real not null,
           temp real not null,
-          location text not null,
-          date timestamp ,
+          hum text not null,
+          date date default now() ,
           fav boolean default False
           );';
 
