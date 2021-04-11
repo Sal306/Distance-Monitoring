@@ -10,7 +10,7 @@ require_once('db_connect.php');
 $return_arr = array();
 
 
-  $result = $db->query("select id, date, temp, distance, humidity  from 
+  $result = $db->query("select id, date, temp, distance, humidity, fav  from 
 report where fav ='true'");
 
 while ($row = $result->fetch()) {
@@ -19,6 +19,7 @@ while ($row = $result->fetch()) {
     $dist = $row['distance'];
     $hum = $row['humidity'];
     $temp = $row['temp'];
+    $fav = $row['fav'];
 
 
 
@@ -27,7 +28,8 @@ while ($row = $result->fetch()) {
         "date" => $date,
         "dist" => $dist,
         "hum" => $hum,
-        "temp" => $temp
+        "temp" => $temp,
+        "fav" => $fav
         
     ); }
   
