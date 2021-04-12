@@ -100,10 +100,10 @@ $.ajax({
   var tr_str = "<section>" +
 										"<header class='dash_head'>" +
 													 "<div>"  +
-													 			"<span class= 'dash_status dash_status--up'>" +
+													 			"<span class= 'dash__status dash__status--up'>" +
 																			"&#9679;" +
 																 "</span>"	+
-																 "<h3 class='dash_name'> "  +
+																 "<h3 class='dash__name'> "  +
 
 																	"</h3>" +
 													 "</div>" +
