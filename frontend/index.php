@@ -11,7 +11,7 @@
 
 	<header class="header">
 		<div class="container">
-			<div class="header__serv">
+			<div class="header__dash">
 				<h1 class="header__dashName">Administation Monitoring</h1>
 				<div class="header__dashIp">AUIS </div>
 			</div>
