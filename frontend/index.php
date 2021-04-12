@@ -103,12 +103,12 @@ $.ajax({
 													 			"<span class= 'dash_status dash_status--up'>" +
 																			"&#9679;" +
 																 "</span>"	+
-																 "<h3 class='serv__name'> "  +
+																 "<h3 class='dash_name'> "  +
 
 																	"</h3>" +
 													 "</div>" +
 
-													 "<div class='server__ip'>"  +
+													 "<div class='dasher__ip'>"  +
 													 			"<span>" +
 															 			"<div class='star_container'  id='" + id +  "' >" +
 																					"<img src='/img/star_full.png' class='imgfull" + id + " " + img1 + " ' id='" + id +  "'>" +
@@ -118,32 +118,32 @@ $.ajax({
 																"</span>" +
 													  "</div>" +
 										 "</header>" +
-							 "<article class='serv__gpu'>" +
-							 	"<div class='serv__grid-3'>" +
-							 	"	<div class='serv__mod'>" +
-							 		"	<div class='serv__modLabel serv__modLabel--red'>"+
+							 "<article class='dash__gpu'>" +
+							 	"<div class='dash__grid-3'>" +
+							 	"	<div class='dash__mod'>" +
+							 		"	<div class='dash__modLabel dash__modLabel--red'>"+
 							 				"Distance" +
 							 			"</div>"+
-							 		"	<div class='serv__modNumber'>"
-							 			 + distance +"<label class='serv__modUnit'>M</label>" +
+							 		"	<div class='dash__modNumber'>"
+							 			 + distance +"<label class='dash__modUnit'>M</label>" +
 							 		"	</div>"+
 							 	"	</div>" +
 
-							 	"	<div class='serv__mod'>" +
-							 		"	<div class='serv__modLabel serv__modLabel--green'>" +
+							 	"	<div class='dash__mod'>" +
+							 		"	<div class='dash__modLabel dash__modLabel--green'>" +
 							 				"Temperature: " +
 							 			"</div>" +
-							 			"<div class='serv__modNumber'>" +
-							 				temp + "<label class='serv__modUnit'>&deg;C</label>" +
+							 			"<div class='dash__modNumber'>" +
+							 				temp + "<label class='dash__modUnit'>&deg;C</label>" +
 							 		"	</div>"+
 							 		"</div>"+
 
-							 	"	<div class='serv__mod'>"+
-							 			"<div class='serv__modLabel serv__modLabel--yellow'>"+
+							 	"	<div class='dash__mod'>"+
+							 			"<div class='dash__modLabel dash__modLabel--yellow'>"+
 							 				"Hum"+
 							 			"</div>"+
-							 			"<div class='serv__modNumber'>" + hum + 
-							 				"<label class='serv__modUnit'></label>" +
+							 			"<div class='dash__modNumber'>" + hum + 
+							 				"<label class='dash__modUnit'></label>" +
 							 		"	</div>"+
 							 		"</div>"+
 
