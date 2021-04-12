@@ -7,27 +7,24 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <title>My Chart.js Chart</title>
+  <title> Chart</title>
 </head>
 <body>
   <div class="container">
-    <canvas id="myChart"></canvas>
+    <canvas id="myChart"></canvas> 
   </div>
 
   <script>
-      var week1, week2, week3, week4 ;
+      var week1, week2, week3, week4; // store the avg distance of each week
       $(document).ready(function() {
 	
-
-
     $.ajax({
-    
-                url: 'api-chart.php',
+    // send a get request to recieve the avgs of week 1-4
+                url: '/backend/api-chart.php',
                 type: 'GET',
                 dataType: 'JSON',
                 success: function(response) {
-                    
-                    
+                    // when recieved , stroe in variables
                         week1 = response[0].bar1
                         week2 = response[0].bar2
                         week3 = response[0].bar3
@@ -42,21 +39,18 @@
     Chart.defaults.global.defaultFontColor = '#777';
 
     let massPopChart = new Chart(myChart, {
-      type:'bar', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
+      type:'bar', // bar, horizontalBar, pie, line, doughnut, radar, polarArea ==> types of charts
       data:{
         labels:['Week 1', 'Week 2', 'Week 3 ', 'Week 4'],
         datasets:[{
           label:'distance',
           
           data:[week1, week2, week3, week4],
-          //backgroundColor:'green',
+          //backgroundColor for bars',
           backgroundColor:[
             'rgba(255, 99, 132, 0.6)',
             'rgba(54, 162, 235, 0.6)',
             'rgba(255, 206, 86, 0.6)',
-            'rgba(75, 192, 192, 0.6)',
-            'rgba(153, 102, 255, 0.6)',
-            'rgba(255, 159, 64, 0.6)',
             'rgba(255, 99, 132, 0.6)'
           ],
           borderWidth:1,
@@ -91,27 +85,13 @@
         }
       }
     });
-                    // var len = response.length;
-                    // for (var i = 0; i < len; i++) {
-                    // 	img1 = "false";
-                    // 	img2 = "";
-                    //     id = response[i].id;
-                    //     hum = response[i].humidity;
-                    //     temp = response[i].temp;
-                    //     distance = response[i].distance;
-                    // 	fav = response[i].fav;
-                    // 	date = response[i].date;
                     },
                     error: function(xhr, status, error) {
                     alert(error);
                 }
             });
         });
-    
-
-    
-
-					
+    		
   </script>
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Favorites</title>
+	<title>AUIS Monitoring System</title>
 	<link rel="stylesheet" type="text/css" href="ss.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="https://github.com/TixieBorg/Ethereum-panel/blob/6797e8e7aef50453b1e1236414c31300f7abf37f/css/design.css">
@@ -12,18 +12,18 @@
 	<header class="header">
 		<div class="container">
 			<div class="header__serv">
-				<h1 class="header__servName">Administation Monitoring</h1>
-				<div class="header__servIp">AUIS </div>
+				<h1 class="header__dashName">Administation Monitoring</h1>
+				<div class="header__dashIp">AUIS </div>
 			</div>
 			<div class="header__stat">
 				<h2 class="header__statName">Social Distancing</h2>
 				<div>
 					<div>
-						<span class="header__statNumber"></span>
+						<span class="header__headerbox"></span>
 						<span class="header__statUnit"> Keep Your 1 meter distance</span>
 					</div>
 					<div>
-						<span class="header__statNumber"></span>
+						<span class="header__headerbox"></span>
 						<span class="header__statUnit"> </span>
 					</div>
 				</div>
@@ -31,7 +31,7 @@
 			<div class="header__stat">
 				<h2 class="header__statName">Safety Guidlines</h2>
 				<div>
-					<span class="header__statNumber"></span>
+					<span class="header__headerbox"></span>
 					<span class="header__statUnit"></span>
 				</div>
 			</div>
@@ -40,10 +40,10 @@
 		<div>
 		<ul class="nav">
   <li class="nav-item">
-    <a class="nav-link " href="./index.php">Home</a>
+    <a class="nav-link " href="/frontend/favorite.html">Favorite</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./chart.html">Chart</a>
+    <a class="nav-link" href="/frontend/chart.html">Chart</a>
   </li>
   
 </ul>
@@ -74,7 +74,7 @@ $(document).ready(function() {
 
 $.ajax({
 
-            url: 'api-ShowFav.php',
+            url: '/backend/api-display.php',
             type: 'GET',
             dataType: 'JSON',
             success: function(response) {
@@ -83,9 +83,9 @@ $.ajax({
 					img1 = "false";
 					img2 = "";
                     id = response[i].id;
-                    hum = response[i].hum;
+                    hum = response[i].humidity;
                   	temp = response[i].temp;
-                    distance = response[i].dist;
+                    distance = response[i].distance;
 					fav = response[i].fav;
 					date = response[i].date;
 					
@@ -188,7 +188,7 @@ $.ajax({
 												            }
 												        }
 
-												        xp.open("PUT", "/api-fav.php" , true);
+												        xp.open("PUT", "/backend/api-fav.php" , true);
 												        xp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 												        xp.send(json);
 																return;

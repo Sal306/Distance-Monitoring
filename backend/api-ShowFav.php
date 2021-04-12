@@ -1,4 +1,6 @@
 <?php
+
+// This page will send the rows where fav=true to favorite.html
 header("Content-Type: application/json; charset=UTF-8");
 header("Access-Control-Allow-Origin: *");
 

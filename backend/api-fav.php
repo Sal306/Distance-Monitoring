@@ -1,5 +1,8 @@
 <?php
 
+
+// this page will recieve the id, value of fav and update the page accordingly. 
+// the date will be sent here via a put method once the fav symbol is clicked 
 header("Content-Type: application/json; charset=UTF-8");
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: PUT");
