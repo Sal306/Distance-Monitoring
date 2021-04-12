@@ -98,7 +98,7 @@ $.ajax({
 
 
   var tr_str = "<section>" +
-										"<header class='dash_head'>" +
+										"<header class='dash__head'>" +
 													 "<div>"  +
 													 			"<span class= 'dash__status dash__status--up'>" +
 																			"&#9679;" +
