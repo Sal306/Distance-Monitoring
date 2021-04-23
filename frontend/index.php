@@ -48,6 +48,11 @@
   
 </ul>
 		</div>
+		<div class="input-group input-daterange">
+    <input type="text" class="form-control" value="2012-04-05">
+    <div class="input-group-addon">to</div>
+    <input type="text" class="form-control" value="2012-04-19">
+</div>
 	</header>
 
 	<main>
