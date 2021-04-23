@@ -47,11 +47,11 @@
   </li>
   
 </ul>
-<div class="input-group input-daterange col-6">
+<span class="input-group input-daterange col-6">
     <input type="date" class="form-control" name="startDate">
     <div class="input-group-addon">to</div>
     <input type="date" class="form-control" name="endDate">
-</div>
+</span>
 		</div>
 	
 	</header>
