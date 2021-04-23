@@ -37,7 +37,7 @@
 			</div>
 		</div>
 
-		<div>
+		<div class="col-6">
 		<ul class="nav">
   <li class="nav-item">
     <a class="nav-link " href="/frontend/favorite.html">Favorite</a>
@@ -47,7 +47,7 @@
   </li>
   
 </ul>
-<div class="input-group input-daterange ">
+<div class="input-group input-daterange col-6">
     <input type="date" class="form-control" name="startDate">
     <div class="input-group-addon">to</div>
     <input type="date" class="form-control" name="endDate">
