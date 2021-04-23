@@ -40,14 +40,15 @@
 		<div class="col-12">
 		<ul class="nav">
   <li class="nav-item">
-    <a class="nav-link " href="/frontend/favorite.html">Favorite</a>
+    <a class="nav-link " href="/frontend/favorite.html">Favorites</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="/frontend/chart.html">Chart</a>
   </li>
   
 </ul>
-<span class="input-group input-daterange right col-6">
+<span class="input-group input-daterange right col-10">
+	<label for="date"> Select Dates Between: </label>
     <input type="date" class="form-control" name="startDate">
     <div class="input-group-addon">to</div>
     <input type="date" class="form-control" name="endDate">
