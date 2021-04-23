@@ -48,11 +48,11 @@
   
 </ul>
 <span class="input-group input-daterange right col-10">
-	<label for="date"> Select Dates Between: </label>
-    <input type="date" class="form-control" name="startDate">
+	<label for="date" class="m-1"  > Select Dates Between: </label>
+    <input type="date" class="form-control m-1" name="startDate">
     <div class="input-group-addon">to</div>
-    <input type="date" class="form-control" name="endDate">
-	<button class="button primary"> Show In This Range</button>
+    <input type="date" class="form-control m-1" name="endDate">
+	<button class="btn btn-primary m-1"> Show In This Range</button>
 </span>
 		</div>
 	
