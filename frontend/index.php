@@ -209,7 +209,6 @@ $.ajax({
 
 
 	function disableButton() {
-		alert("worling");
         var d1 = document.getElementById('startDate').value;
         var d2 = document.getElementById('endDate').value;
         const btn = document.getElementById('dataSelector');
