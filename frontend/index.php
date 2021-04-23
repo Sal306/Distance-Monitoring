@@ -52,6 +52,7 @@
     <input type="date" class="form-control" name="startDate">
     <div class="input-group-addon">to</div>
     <input type="date" class="form-control" name="endDate">
+	<button class="button primary"> Show In This Range</button>
 </span>
 		</div>
 	
