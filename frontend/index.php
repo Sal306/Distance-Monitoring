@@ -37,7 +37,7 @@
 			</div>
 		</div>
 
-		<div class="col-6">
+		<div class="col-12">
 		<ul class="nav">
   <li class="nav-item">
     <a class="nav-link " href="/frontend/favorite.html">Favorite</a>
