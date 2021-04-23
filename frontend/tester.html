@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span class="input-group input-daterange right col-10">
+        <label for="date" class="m-1"  > Select Dates Between: </label>
+        <input type="date" class="form-control m-1" id="startDate"  onchange="disableButton()">
+        <div class="input-group-addon">to</div>
+        <input type="date" class="form-control m-1" id="endDate" onchange="disableButton()">
+        <button type="button" class="btn btn-primary m-1" id="dataSelector"> Show In This Range</button>
+    </span>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        disableButton();
+    })
+
+    function disableButton() {
+        var d1 = document.getElementById('startDate').value;
+        var d2 = document.getElementById('endDate').value;
+        const btn = document.getElementById('dataSelector');
+
+        if(!d1 || !d2){
+             btn.disabled = true;
+        }
+        else{
+            btn.disabled = false;
+        }
+             
+    }
+
+    
+</script>
+</html>

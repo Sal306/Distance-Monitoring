@@ -49,36 +49,27 @@
 </ul>
 <span class="input-group input-daterange right col-10">
 	<label for="date" class="m-1"  > Select Dates Between: </label>
-    <input type="date" class="form-control m-1" name="startDate">
+    <input type="date" class="form-control m-1" id="startDate" onchange="disableButton()">
     <div class="input-group-addon">to</div>
-    <input type="date" class="form-control m-1" name="endDate">
-	<button class="btn btn-primary m-1"> Show In This Range</button>
+    <input type="date" class="form-control m-1" id="endDate" onchange="disableButton()">
+	<button class="btn btn-primary m-1" id="dataSelector" > Show In This Range</button>
 </span>
 		</div>
-	
 	</header>
-
 	<main>
-
-
 		<div class="container1">
-
-
-
 		</div>
 	</main>
 
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-
-
 <script type="text/javascript">
 $(document).ready(function() {
+	disableButton();
 	var ID, img1, img2;
 	img1 = "";
 	img2 = "";
-
 
 $.ajax({
 
@@ -103,9 +94,8 @@ $.ajax({
 						 img1 = "";
 					}
 					
-
-
   var tr_str = "<section>" +
+
 										"<header class='dash__head'>" +
 													 "<div>"  +
 													 			"<span class= 'dash__status dash__status--up'>" +
@@ -212,6 +202,25 @@ $.ajax({
             }
         });
     });
+
+
+
+
+
+
+	function disableButton() {
+        var d1 = document.getElementById('startDate').value;
+        var d2 = document.getElementById('endDate').value;
+        const btn = document.getElementById('dataSelector');
+
+        if(!d1 || !d2){
+             btn.disabled = true;
+        }
+        else{
+            btn.disabled = false;
+        }
+             
+    }
 
 
 
