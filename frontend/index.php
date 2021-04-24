@@ -52,7 +52,7 @@
     <input type="date" class="form-control m-1" id="startDate" onchange="disableButton()">
     <div class="input-group-addon">to</div>
     <input type="date" class="form-control m-1" id="endDate" onchange="disableButton()">
-	<button class="btn btn-primary m-1" id="dataSelector" > Show In This Range</button>
+	<button class="btn btn-primary m-1" id="dataSelector" onclick="sendData()" > Show In This Range</button>
 </span>
 		</div>
 	</header>
