@@ -19,7 +19,7 @@ if($data){
 $return_arr = array();
 
 //query to return the values
-$result = $db->query('SELECT id, distance, humidity, temp, fav, date FROM report where date between "' . $d1 . '" AND "' .$d2 .  '" ORDER BY date ASC');
+$result = $db->query('SELECT id, distance, humidity, temp, fav, date FROM report where date between' . $d1 . ' AND' .$d2 .  'ORDER BY date ASC');
 
 while ($row = $result->fetch()) {
   $id = $row['id'];
