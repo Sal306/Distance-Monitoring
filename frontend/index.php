@@ -256,61 +256,7 @@ $.ajax({
 						 img1 = "";
 					}
 					
-  var tr_str = "<section>" +
-
-										"<header class='dash__head'>" +
-													 "<div>"  +
-													 			"<span class= 'dash__status dash__status--up'>" +
-																			"&#9679;" +
-																 "</span>"	+
-																 "<h3 class='dash__name'> "  +
-
-																	"</h3>" +
-													 "</div>" +
-
-													 "<div class='dasher__ip'>"  +
-													 			"<span>" +
-															 			"<div class='star_container'  id='" + id +  "' >" +
-																					"<img src='/img/star_full.png' class='imgfull" + id + " " + img1 + " ' id='" + id +  "'>" +
-																					"<img src='/img/star_empty.png' class='imgempty" + id + " " + img2 +  "'>" +
-																		"</div>" +
-																		  date +
-																"</span>" +
-													  "</div>" +
-										 "</header>" +
-							 "<article class='dash__gpu'>" +
-							 	"<div class='dash__grid-3'>" +
-							 	"	<div class='dash__mod'>" +
-							 		"	<div class='dash__modLabel dash__modLabel--red'>"+
-							 				"Distance" +
-							 			"</div>"+
-							 		"	<div class='dash__modNumber'>"
-							 			 + distance +"<label class='dash__modUnit'>M</label>" +
-							 		"	</div>"+
-							 	"	</div>" +
-
-							 	"	<div class='dash__mod'>" +
-							 		"	<div class='dash__modLabel dash__modLabel--green'>" +
-							 				"Temperature: " +
-							 			"</div>" +
-							 			"<div class='dash__modNumber'>" +
-							 				temp + "<label class='dash__modUnit'>&deg;C</label>" +
-							 		"	</div>"+
-							 		"</div>"+
-
-							 	"	<div class='dash__mod'>"+
-							 			"<div class='dash__modLabel dash__modLabel--yellow'>"+
-							 				"Hum"+
-							 			"</div>"+
-							 			"<div class='dash__modNumber'>" + hum + 
-							 				"<label class='dash__modUnit'></label>" +
-							 		"	</div>"+
-							 		"</div>"+
-
-
-							 	"</div>"+
-							 "</article>"  +
-							"</section>";
+  
                     $(".container1").append(tr_str);
                 }
 				}, error: function(xhr, status, error) {
