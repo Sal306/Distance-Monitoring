@@ -306,57 +306,10 @@ $.ajax({
 							"</section>";
                     $(".container1").append(tr_str);
                 }
-
-								// get images' container
-							let	starContainer =Array.from(document.getElementsByClassName("star_container"));
-
-								if(starContainer){
-									for(let i =0; i<starContainer.length; i++){
-									starContainer[i].addEventListener("click", function () {
-										ID = starContainer[i].id
-										let emptyStar = document.querySelector(`.imgempty${ID}`);
-										let fullStar = document.querySelector(`.imgfull${ID}`);
-										emptyStar.classList.toggle("false");
-										fullStar.classList.toggle("false");
-										let clas = Array.from(fullStar.classList);
-
-										if(clas.includes("false")){
-												obj = {
-													"fav": 'false',
-													"id": ID
-												};
-											}else{
-												obj = {
-													"fav": 'true',
-													"id": ID
-												};
-											}
-
-												var json = JSON.stringify(obj);
-
-												var xp = new XMLHttpRequest();
-												xp.onreadystatechange = function() {
-												            if (this.readyState == 4 && this.status == 201) {
-																console.log("Change was made");
-												            }
-												        }
-
-												        xp.open("PUT", "/backend/api-fav.php" , true);
-												        xp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-												        xp.send(json);
-																return;
-
-									});
-								}
-								}else{
-									alert("Doesn't exist");
-								}
-            },
-           
-            },
-            error: function(xhr, status, error) {
+				}, error: function(xhr, status, error) {
                 alert(error);
             }
+									         
         };
         $.ajax(options);
 							
