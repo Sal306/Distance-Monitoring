@@ -10,7 +10,7 @@
 <body>
 
 	<header class="header">
-		<div class="container">
+		<div class="container" >
 			<div class="header__dash">
 				<h1 class="header__dashName">Administation Monitoring</h1>
 				<div class="header__dashIp">AUIS </div>
@@ -57,7 +57,7 @@
 		</div>
 	</header>
 	<main>
-		<div class="container1">
+		<div class="container1" id='con1'>
 		</div>
 	</main>
 
@@ -223,7 +223,7 @@ $.ajax({
     }
 
 	function sendData() {
-		$(".container1").innerHTML = '';
+        document.getElementById('con1').innerHTML= '';
 		var d1 = document.getElementById('startDate').value;
         var d2 = document.getElementById('endDate').value;
 
