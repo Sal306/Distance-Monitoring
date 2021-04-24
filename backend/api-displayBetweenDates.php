@@ -13,7 +13,7 @@ echo 'hi';
 
 $d1 = $data['d1'];
 $d2 = $data['d2'];
-
+print $data;
 
 if($data){
     //array to hold the returned values from the DB

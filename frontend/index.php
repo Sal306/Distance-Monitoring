@@ -228,14 +228,14 @@ $.ajax({
 
 		obj = {'d1': d1, 'd2': d2};
 
-					var json = JSON.stringify(obj);
+					var json1 = JSON.stringify(obj);
 					alert(json);
 
 					  var options = {
             url: "/backend/api-displayBetweenDates.php",
             dataType: "json",
             type: "GET",
-			data: json,
+			data: json1,
 
             success: function(response) {
 				var len = response.length;
