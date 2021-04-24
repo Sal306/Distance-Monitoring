@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="1"> content </div>
     <span class="input-group input-daterange right col-10">
         <label for="date" class="m-1"  > Select Dates Between: </label>
         <input type="date" class="form-control m-1" id="startDate"  onchange="disableButton()">
@@ -23,6 +24,7 @@
     })
 
     function disableButton() {
+        document.getElementById('1').innerHTML= '213';
         var d1 = document.getElementById('startDate').value;
         var d2 = document.getElementById('endDate').value;
         const btn = document.getElementById('dataSelector');

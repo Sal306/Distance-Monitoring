@@ -223,6 +223,7 @@ $.ajax({
     }
 
 	function sendData() {
+		$(".container1").innerHTML = '';
 		var d1 = document.getElementById('startDate').value;
         var d2 = document.getElementById('endDate').value;
 
