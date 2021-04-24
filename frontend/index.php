@@ -65,6 +65,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <script type="text/javascript">
+var tr_str;
 $(document).ready(function() {
 	disableButton();
 	var ID, img1, img2;
@@ -94,7 +95,7 @@ $.ajax({
 						 img1 = "";
 					}
 					
-  var tr_str = "<section>" +
+   tr_str = "<section>" +
 
 										"<header class='dash__head'>" +
 													 "<div>"  +
