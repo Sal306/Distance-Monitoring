@@ -230,7 +230,6 @@ $.ajax({
             url: "api-displayBetweenDates/search?d1=" + d1 + "&d2=" + d2 ,
             dataType: "json",
             type: "GET",
-            data: json,
             success: function(response) {
 				var len = response.length;
                 for (var i = 0; i < len; i++) {
