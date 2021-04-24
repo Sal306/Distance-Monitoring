@@ -226,10 +226,19 @@ $.ajax({
 		var d1 = document.getElementById('startDate').value;
         var d2 = document.getElementById('endDate').value;
 
+		obj = {
+						"d1": d1,
+						"d2": d2
+												};
+
+					var json = JSON.stringify(obj);
+
 					  var options = {
-            url: "api-displayBetweenDates/search?d1=" + d1 + "&d2=" + d2 ,
+            url: "api-displayBetweenDates",
             dataType: "json",
             type: "GET",
+			data: json,
+
             success: function(response) {
 				var len = response.length;
                 for (var i = 0; i < len; i++) {
