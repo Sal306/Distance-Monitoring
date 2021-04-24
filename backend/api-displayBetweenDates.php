@@ -8,12 +8,11 @@ define('TITLE', 'Report');
 require_once('db_connect.php');
 
 $data = json_decode(file_get_contents("php://input"), true);
-echo $data;
-echo 'hi';
+
 
 $d1 = $data['d1'];
 $d2 = $data['d2'];
-print $data;
+
 
 if($data){
     //array to hold the returned values from the DB
