@@ -226,13 +226,10 @@ $.ajax({
 		var d1 = document.getElementById('startDate').value;
         var d2 = document.getElementById('endDate').value;
 
-		obj = {
-						"d1": d1,
-						"d2": d2
-												};
+		obj = {'d1': d1, 'd2': d2};
 
 					var json = JSON.stringify(obj);
-					alert(json.d1);
+					alert(json);
 
 					  var options = {
             url: "/backend/api-displayBetweenDates.php",
