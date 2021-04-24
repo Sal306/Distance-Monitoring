@@ -234,7 +234,7 @@ $.ajax({
 					  var options = {
             url: "/backend/api-displayBetweenDates.php",
             dataType: "json",
-            type: "GET",
+            type: "PUT",
 			data: json1,
 
             success: function(response) {
