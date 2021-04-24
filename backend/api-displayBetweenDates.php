@@ -10,11 +10,11 @@ require_once('db_connect.php');
 $data = json_decode(file_get_contents("php://input"), true);
 
 
-$d1 = $data["d1"];
+$d1 = $_GET[0];
 $d2 = $data['d2'];
 
 if(!$d1){
-    $d1 = $_GET['d1'];
+    $d1 = $_GET[0];
 }
 
 //array to hold the returned values from the DB
