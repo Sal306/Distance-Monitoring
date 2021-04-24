@@ -15,8 +15,8 @@ $d1 = $data['d1'];
 $d2 = $data['d2'];
 
 
-
-//array to hold the returned values from the DB
+if($data){
+    //array to hold the returned values from the DB
 $return_arr = array();
 
 //query to return the values
@@ -42,3 +42,5 @@ while ($row = $result->fetch()) {
 
 //return the json encoded values
 echo json_encode($return_arr);
+
+}
