@@ -7,11 +7,16 @@ define('TITLE', 'Report');
 
 require_once('db_connect.php');
 
+$data = json_decode(file_get_contents("php://input"), true);
+
+$d1 = $data["d1"];
+$d2 = $data['d2'];
+
 //array to hold the returned values from the DB
 $return_arr = array();
 
 //query to return the values
-$result = $db->query('SELECT id, distance, humidity, temp, fav, date FROM report where date between "' . $_GET['d1'] . '" AND "' .$_GET['d2'] .  '" ORDER BY date ASC');
+$result = $db->query('SELECT id, distance, humidity, temp, fav, date FROM report where date between "' . $d1 . '" AND "' .$d2 .  '" ORDER BY date ASC');
 
 while ($row = $result->fetch()) {
   $id = $row['id'];
