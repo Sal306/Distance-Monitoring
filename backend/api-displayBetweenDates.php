@@ -11,7 +11,7 @@ require_once('db_connect.php');
 $return_arr = array();
 
 //query to return the values
-$result = $db->query("SELECT id, distance, humidity, temp, fav, date FROM report where date =" . $date .  "ORDER BY date ASC");
+$result = $db->query('SELECT id, distance, humidity, temp, fav, date FROM report where date between "' . $_GET['d1'] . '" AND "' .$_GET['d2'] .  '" ORDER BY date ASC');
 
 while ($row = $result->fetch()) {
   $id = $row['id'];
