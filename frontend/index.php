@@ -232,6 +232,7 @@ $.ajax({
 												};
 
 					var json = JSON.stringify(obj);
+					alert(json.d1);
 
 					  var options = {
             url: "/backend/api-displayBetweenDates.php",
