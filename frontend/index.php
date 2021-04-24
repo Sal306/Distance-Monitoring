@@ -223,7 +223,7 @@ $.ajax({
     }
 
 	function sendData() {
-        document.getElementById('con1').innerHTML= '123';
+        document.getElementById('con1').innerHTML= ' ';
 		var d1 = document.getElementById('startDate').value;
         var d2 = document.getElementById('endDate').value;
 
