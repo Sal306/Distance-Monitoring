@@ -1,5 +1,5 @@
 {
     "require": {
-        "mpdf/mpdf": "dev-php8-support"
+        "mpdf/mpdf": "^8.0"
     }
 }
