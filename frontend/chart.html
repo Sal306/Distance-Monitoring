@@ -12,6 +12,7 @@
 <body>
   <div class="container">
     <canvas id="myChart"></canvas> 
+    <button class="btn btn-success" onclick="pdf()"> Download as PDF</button>
   </div>
 
   <script>
@@ -92,6 +93,20 @@
             });
         });
     		
+        function pdf(){
+          var data = document.getElementById('container').innerHTML;
+          obj = {
+            'data' : data
+          };
+          obj = JSON.stringify(obj);
+          var options = {
+            url: "/backend/pdf.php",
+            dataType: "json",
+            type: "POST",
+			  data: obj,
+        }
+        $.ajax(options);
+        }
   </script>
 </body>
 </html>
