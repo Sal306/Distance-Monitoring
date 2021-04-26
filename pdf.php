@@ -5,7 +5,6 @@ header("Access-Control-Allow-Origin: *");
 
 define('TITLE', 'Report');
 
-require_once('db_connect.php');
 require_once __DIR__ . '/vendor/autoload.php';
 
 $data = json_decode(file_get_contents("php://input"), true);
