@@ -12,6 +12,6 @@ $data = json_decode(file_get_contents("php://input"), true);
 
 $data = $data['data'];
 
-$mpdf = new Mpdf();
+$mpdf = new \Mpdf();
 $mpdf->WriteHTML($data);
 $mpdf->Output();
