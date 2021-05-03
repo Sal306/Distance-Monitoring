@@ -21,7 +21,9 @@ when date > now() - interval '4 week' then 'week4'
 end
 from report ) as A where A.case ='week1'");
 
-
+if (!$result){
+  http_response_code(501);
+}
 while ($row = $result->fetch()) {
   $week1 = $row['avg'];
 }
@@ -35,7 +37,9 @@ when date > now() - interval '3 week' then 'week3'
 when date > now() - interval '4 week' then 'week4' 
 end
 from report ) as A where A.case ='week2'");
-
+if (!$result){
+  http_response_code(501);
+}
 while ($row = $result->fetch()) {
     $week2 = $row['avg'];
   }
@@ -50,6 +54,9 @@ when date > now() - interval '4 week' then 'week4'
 end
 from report ) as A where A.case ='week3'");
 
+if (!$result){
+  http_response_code(501);
+}
 while ($row = $result->fetch()) {
     $week3 = $row['avg'];
   }
@@ -64,6 +71,9 @@ when date > now() - interval '4 week' then 'week4'
 end
 from report ) as A where A.case ='week4'");
 
+if (!$result){
+  http_response_code(501);
+}
 while ($row = $result->fetch()) {
     $week4 = $row['avg'];
 
@@ -81,3 +91,4 @@ while ($row = $result->fetch()) {
 
 //return the json encoded values
 echo json_encode($return_arr);
+http_response_code(201);

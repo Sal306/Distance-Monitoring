@@ -1,4 +1,0 @@
-RewriteEngine on
-
-RewriteRule ^report$ api-display.php 	
-RewriteRule ^home$ ../fronend/index.php
