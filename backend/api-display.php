@@ -11,7 +11,7 @@ require_once('db_connect.php');
 $return_arr = array();
 
 //query to return the values
-$result = $db->query("SELECT id, distance, humidity, temp, fav, date FROM report ORDER BY id ASC");
+$result = $db->query("SELECT id, distance, humidity, temp, fav, date FROM report ORDER BY date desc ");
 
 
 if(!$result){
