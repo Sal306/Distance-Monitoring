@@ -87,7 +87,13 @@ $.ajax({
                     distance = response[i].distance;
 					fav = response[i].fav;
 					date = response[i].date;
-					
+					if(distance > 1.5){
+						console.log(distance);
+						check = '&#10060;';
+					}else{
+						console.log(distance);
+						check = '&#9679;';
+					}
 
 					if(fav==true){
 						 img2 = "false";
@@ -241,8 +247,10 @@ $.ajax({
 					fav = response[i].fav;
 					date = response[i].date;
 					if(distance > 1.5){
+						console.log(distance);
 						check = '&#10060;';
 					}else{
+						console.log(distance);
 						check = '&#9679;';
 					}
 
