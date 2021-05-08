@@ -13,6 +13,10 @@ $return_arr = array();
 //query to return the values
 $result = $db->query("SELECT id, distance, humidity, temp, fav, date FROM report ORDER BY id ASC");
 
+
+if(!$result){
+  http_response_code(501);
+}
 while ($row = $result->fetch()) {
   $id = $row['id'];
   $distance = $row['distance'];
@@ -33,3 +37,4 @@ while ($row = $result->fetch()) {
 
 //return the json encoded values
 echo json_encode($return_arr);
+http_response_code(201);

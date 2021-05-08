@@ -203,11 +203,6 @@ $.ajax({
         });
     });
 
-
-
-
-
-
 	function disableButton() {
         var d1 = document.getElementById('startDate').value;
         var d2 = document.getElementById('endDate').value;
@@ -218,8 +213,7 @@ $.ajax({
         }
         else{
             btn.disabled = false;
-        }
-             
+        }             
     }
 
 	function sendData() {
@@ -228,10 +222,7 @@ $.ajax({
         var d2 = document.getElementById('endDate').value;
 
 		obj = {'d1': d1, 'd2': d2};
-
-					var json1 = JSON.stringify(obj);
-					
-
+					var json1 = JSON.stringify(obj);				
 					  var options = {
             url: "/backend/api-displayBetweenDates.php",
             dataType: "json",
@@ -249,7 +240,11 @@ $.ajax({
                     distance = response[i].distance;
 					fav = response[i].fav;
 					date = response[i].date;
-					
+					if(distance > 1.5){
+						check = '&#10060;';
+					}else{
+						check = '&#9679;';
+					}
 
 					if(fav==true){
 						 img2 = "false";
@@ -261,7 +256,7 @@ $.ajax({
 										"<header class='dash__head'>" +
 													 "<div>"  +
 													 			"<span class= 'dash__status dash__status--up'>" +
-																			"&#9679;" +
+																			check +
 																 "</span>"	+
 																 "<h3 class='dash__name'> "  +
 
@@ -321,8 +316,5 @@ $.ajax({
         $.ajax(options);
 							
 	}
-
-
-
 </script>
 </html>

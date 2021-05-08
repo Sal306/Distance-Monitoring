@@ -39,3 +39,4 @@ while ($row = $result->fetch()) {
 
 //return the json encoded values
 echo json_encode($return_arr);
+http_response_code(201);

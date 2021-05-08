@@ -30,9 +30,9 @@ $result->execute();
 
 
 if ($result->rowCount()) {
-    echo json_encode(array("message" => $result->rowCount() . " records UPDATED successfully"));
+    echo json_encode(array("message" => $result->rowCount() . " records Inserted  successfully"));
     http_response_code(201);
 } else {
-    echo json_encode(array("message" => "failed to update your data"));
+    echo json_encode(array("message" => "failed to Insert your data"));
     http_response_code(500);
 }

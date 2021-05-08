@@ -28,8 +28,8 @@ $db = new PDO($dsn);
 
       }
 
-    else {
-      echo "Error";
+    else {  
+        http_response_code(501);    
     }
 
      ?>

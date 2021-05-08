@@ -12,5 +12,5 @@ $data = json_decode(file_get_contents("php://input"), true);
 $data = $data['data'];
 
 $mpdf = new \mPDF('utf-8', 'A4-L');
-$mpdf->WriteHTML(' <h1> YES </h1>');
+$mpdf->WriteHTML($data);
 $mpdf->Output();
