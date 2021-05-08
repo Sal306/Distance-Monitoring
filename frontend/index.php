@@ -105,7 +105,7 @@ $.ajax({
 										"<header class='dash__head'>" +
 													 "<div>"  +
 													 			"<span class= 'dash__status dash__status--up'>" +
-																			"&#9679;" +
+																			check +
 																 "</span>"	+
 																 "<h3 class='dash__name'> "  +
 

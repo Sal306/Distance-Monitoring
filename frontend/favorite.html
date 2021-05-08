@@ -89,7 +89,13 @@ $.ajax({
                     distance = response[i].dist;
 					fav = response[i].fav;
 					date = response[i].date;
-					
+					if(distance > 1.5){
+						console.log(distance);
+						check = '&#10060;';
+					}else{
+						console.log(distance);
+						check = '&#9679;';
+					}
 					// if data is favorited, display the fullstar
 					if(fav==true){
 						 img2 = "false";
@@ -101,7 +107,7 @@ $.ajax({
 										"<header class='dash__head'>" +
 													 "<div>"  +
 													 			"<span class= 'dash__status dash__status--up'>" +
-																			"&#9679;" +
+																			check +
 																 "</span>"	+
 																 "<h3 class='dash__name'> "  +
 
