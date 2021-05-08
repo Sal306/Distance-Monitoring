@@ -18,12 +18,14 @@
    hum = hum.innerHTML;
    dist = dist.innerHTML;
    temp = temp.innerHTML;
+   var date = new Date(dateTime. getTime());
+   date.setHours(0, 0, 0, 0);
 
    obj = {
      'hum': hum, 
      'dist': dist,
      'temp' : temp,
-     'time' : time()
+     'date' : date
    };
    var json = JSON.stringify(obj);
         //passing the values using ajax
