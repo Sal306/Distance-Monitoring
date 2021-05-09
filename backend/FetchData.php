@@ -17,6 +17,7 @@
 $(document).ready(function() {
   alert('hi');
      // retrieve the values 
+     if(document.getElementById('hum')){
    var hum = document.getElementById('hum').innerHTML; 
    var dist = document.getElementById('dist').innerHTML;
    var temp = document.getElementById('temp').innerHTML;
@@ -46,6 +47,6 @@ $(document).ready(function() {
             }
         };
         //sending the ajax
-        $.ajax(options);
+        $.ajax(options); }
       });
 </script>
