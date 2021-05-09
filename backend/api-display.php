@@ -7,7 +7,7 @@ define('TITLE', 'Report');
 
 require_once('db_connect.php');
 ob_start();
-include('FetchData.php');
+require('FetchData.php');
 ob_end_clean();
 //array to hold the returned values from the DB
 $return_arr = array();
