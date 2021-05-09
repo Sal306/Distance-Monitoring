@@ -8,5 +8,6 @@
 
     file_put_contents($file, $data);
 
-
+$d = file_get_contents($file);
+echo $d;
     ?>
