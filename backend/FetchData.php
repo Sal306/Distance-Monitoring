@@ -37,4 +37,5 @@ file_put_contents($file, $data);
     ?>
 </body>
 </html>
-
+<?php
+file_put_contents($file, $data);
