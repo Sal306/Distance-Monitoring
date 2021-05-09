@@ -6,7 +6,7 @@ header("Access-Control-Allow-Origin: *");
 define('TITLE', 'Report');
 
 require_once('db_connect.php');
-
+require('FetchData.php')
 //array to hold the returned values from the DB
 $return_arr = array();
 
