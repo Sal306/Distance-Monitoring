@@ -6,7 +6,6 @@ header("Access-Control-Allow-Origin: *");
 define('TITLE', 'Report');
 
 require_once('db_connect.php');
-sleep(2);
 ob_start();
 include_once('FetchData.php');
 ob_end_clean();
