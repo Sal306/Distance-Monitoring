@@ -5,9 +5,8 @@
     
     $file = 'temp.html';    
     file_put_contents($file, $data);
-    sleep(3);
+    sleep(1);
     $newcontent = file_get_contents("temp.html");
-    sleep(2);
     echo $newcontent;
     ?>
 
