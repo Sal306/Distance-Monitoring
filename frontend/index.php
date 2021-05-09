@@ -87,7 +87,7 @@ $.ajax({
                     distance = response[i].distance;
 					fav = response[i].fav;
 					date = response[i].date;
-					if(distance > 1.5){
+					if(distance < 1.5){
 						console.log(distance);
 						check = '&#10060;';
 					}else{
