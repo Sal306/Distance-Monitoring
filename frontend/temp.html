@@ -15,15 +15,16 @@
      // retrieve the values 
    let hum = document.getElementById('hum'); 
    let dist = document.getElementById('dist');
-   let temp = document.getElementById('temp'); 
-   if(hum != null && dist != null && temp !=null)
-   {
+   let temp = document.getElementById('temp');
+    
    hum = hum.innerHTML;
    dist = dist.innerHTML;
    temp = temp.innerHTML;
+   
+  
    var date = new Date(dateTime. getTime());
    date.setHours(0, 0, 0, 0);
-   }
+   
 
    obj = {
      'hum': hum, 
