@@ -14,7 +14,6 @@
 
 <script>
 
-$(document).ready(function() {
      // retrieve the values 
      if(document.getElementById('hum')){
    var hum = document.getElementById('hum').innerHTML; 
@@ -47,5 +46,4 @@ $(document).ready(function() {
         };
         //sending the ajax
         $.ajax(options); }
-      });
 </script>
