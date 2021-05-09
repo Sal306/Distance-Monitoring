@@ -1,5 +1,5 @@
 
-> <!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -33,6 +33,7 @@ file_put_contents($file, $data);
 </head>
 <body> <?php
     echo $data;
+    echo 'hey';
     ?>
 </body>
 </html>
