@@ -20,8 +20,8 @@ $(document).ready(function() {
    var hum = document.getElementById('hum').innerHTML; 
    var dist = document.getElementById('dist').innerHTML;
    var temp = document.getElementById('temp').innerHTML;
-   var date = new Date(dateTime.getTime());
-   date.setHours(0, 0, 0, 0);
+   var dateOnly = new Date();
+   var date = dateOnly.getFullYear()+'/'+(dateOnly.getMonth()+1)+'/'+dateOnly.getDate(); 
    
 
    obj = {
