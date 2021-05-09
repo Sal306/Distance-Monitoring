@@ -2,8 +2,7 @@
 <?php
 
     $data = $_POST["dist"];
-    sleep(5);
-    echo $data;
+    
     $file = 'temp.html';    
     file_put_contents($file, $data);
     sleep(3);
