@@ -26,7 +26,7 @@ $(document).ready(function() {
    temp = temp.innerHTML;
    
   
-   var date = new Date(dateTime. getTime());
+   var date = new Date(dateTime.getTime());
    date.setHours(0, 0, 0, 0);
    
 
