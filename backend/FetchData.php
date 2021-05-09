@@ -15,7 +15,6 @@
 <script>
 
 $(document).ready(function() {
-  alert('hi');
      // retrieve the values 
      if(document.getElementById('hum')){
    var hum = document.getElementById('hum').innerHTML; 
