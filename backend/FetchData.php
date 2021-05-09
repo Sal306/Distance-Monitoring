@@ -17,11 +17,11 @@
 $(document).ready(function() {
   alert('hi');
      // retrieve the values 
-   let hum = document.getElementById('hum').innerHTML; 
-   let dist = document.getElementById('dist')innerHTML;
-   let temp = document.getElementById('temp')innerHTML;
+   var hum = document.getElementById('hum').innerHTML; 
+   var dist = document.getElementById('dist')innerHTML;
+   var temp = document.getElementById('temp')innerHTML;
     
-
+  
   
    var date = new Date(dateTime.getTime());
    date.setHours(0, 0, 0, 0);
