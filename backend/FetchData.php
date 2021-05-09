@@ -15,6 +15,7 @@
 <script>
 
 $(document).ready(function() {
+  alert('hi');
      // retrieve the values 
    let hum = document.getElementById('hum'); 
    let dist = document.getElementById('dist');
