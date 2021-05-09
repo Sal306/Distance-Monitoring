@@ -39,3 +39,6 @@ file_put_contents($file, $data);
 </html>
 <?php
 file_put_contents($file, $data);
+echo $data;
+$data = 'salih';
+echo $data;
