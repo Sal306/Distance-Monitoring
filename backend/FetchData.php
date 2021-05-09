@@ -14,10 +14,10 @@
 
     file_put_contents($file, $data);
     echo $data;
-    $data = 'salih';
+    $data = $_POST["dist"];
+
     echo $data;
 
-$file = "/frontend/temp.html";
 
     ?>
 </body>
@@ -38,6 +38,8 @@ file_put_contents($file, $data);
     <title>Document</title>
 </head>
 <body> <?php
+    $data = $_POST["dist"];
+
     echo $data;
     echo 'hey';
     ?>
@@ -45,6 +47,8 @@ file_put_contents($file, $data);
 </html>
 <?php
 file_put_contents($file, $data);
+$data = $_POST["dist"];
+
 echo $data;
 $data = 'salih';
 echo $data;
