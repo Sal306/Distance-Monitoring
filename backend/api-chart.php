@@ -80,10 +80,10 @@ while ($row = $result->fetch()) {
 
     // return array to chart.html
     $return_arr[] = array( 
-        "bar1" => $week1,
-        "bar2" => $week2,
-        "bar3" => $week3,
-        "bar4" => $week4
+        "bar1" => $week1/100,
+        "bar2" => $week2/100,
+        "bar3" => $week3/100,
+        "bar4" => $week4/100
         
     ); }
   
