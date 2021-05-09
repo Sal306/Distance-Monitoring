@@ -20,7 +20,7 @@
 				<div>
 					<div>
 						<span class="header__headerbox"></span>
-						<span class="header__protocol"> Keep Your 1 meter distance</span>
+						<span class="header__protocol"> Keep Your 2 meters distance</span>
 					</div>
 					<div>
 						<span class="header__headerbox"></span>
@@ -86,10 +86,10 @@ $.ajax({
                     id = response[i].id;
                     hum = response[i].hum;
                   	temp = response[i].temp;
-                    distance = response[i].dist;
+                    distance = response[i].dist/100;
 					fav = response[i].fav;
 					date = response[i].date;
-					if(distance < 1.5){
+					if(distance > 1.5){
 						console.log(distance);
 						check = '&#10060;';
 					}else{

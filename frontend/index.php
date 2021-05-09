@@ -20,7 +20,7 @@
 				<div>
 					<div>
 						<span class="header__headerbox"></span>
-						<span class="header__statUnit"> Keep Your 1 meter distance</span>
+						<span class="header__statUnit"> Keep Your 2 meters distance</span>
 					</div>
 					<div>
 						<span class="header__headerbox"></span>
@@ -84,7 +84,7 @@ $.ajax({
                     id = response[i].id;
                     hum = response[i].humidity;
                   	temp = response[i].temp;
-                    distance = response[i].distance;
+                    distance = response[i].distance/100;
 					fav = response[i].fav;
 					date = response[i].date;
 					if(distance < 1.5){
@@ -243,7 +243,7 @@ $.ajax({
                     id = response[i].id;
                     hum = response[i].humidity;
                   	temp = response[i].temp;
-                    distance = response[i].distance;
+                    distance = response[i].distance/100;
 					fav = response[i].fav;
 					date = response[i].date;
 					if(distance > 1.5){
