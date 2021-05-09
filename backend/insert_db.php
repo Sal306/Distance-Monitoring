@@ -11,8 +11,8 @@ $data = json_decode(file_get_contents("php://input"), true);
 //catching the decoded values
 $hum = $data['hum'];
 $temp = $data['temp'];
-$time = $data['time'];
-$date = $data['dist'];
+$date = $data['date'];
+$dist = $data['dist'];
 
 
 //DB connection
