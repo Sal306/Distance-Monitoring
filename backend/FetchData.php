@@ -21,6 +21,8 @@ file_put_contents($file, $data);
      <title>Document</title>
  </head>
  <body>
-     hey
+     <?php
+ echo $data;
+?>
  </body>
  </html>
